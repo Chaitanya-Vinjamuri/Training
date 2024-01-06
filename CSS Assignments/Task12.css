@@ -1,0 +1,81 @@
+.a{
+    height: 400px;
+    width: 300px;
+    background-size: cover;
+    background-image: url("pictures/card1.jpg");
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    z-index: 1;
+}
+.q1{
+    position: relative;
+    left: 500px;
+    top: 50px;
+    font-size: 25px;
+}
+.q2{
+    position: relative;
+    left: 550px;
+    top: 70px;
+    font-size: 25px;
+}
+
+.q3{
+    position: relative;
+    left: 650px;
+    top: 90px;
+    font-size: 25px;
+}
+.q4{
+    position: relative;
+    left: 700px;
+    top: 150px;
+    font-size: 25px;
+}
+.q5{
+    position: relative;
+    left: 750px;
+    top: 300px;
+    font-size: 25px;
+}
+.b{
+    height: 400px;
+    width: 300px;
+    background-size: cover;
+    background-image: url("pictures/card2.jpg");
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    z-index: 2;
+}
+.c{
+    height: 400px;
+    width: 300px;
+    background-size: cover;
+    background-image: url("pictures/card3.jpg");
+    position: absolute;
+    top: 180px;
+    left: 250px;
+    z-index: 3;
+}
+.d{
+    height: 400px;
+    width: 300px;
+    background-size: cover;
+    background-image: url("pictures/card4.jpg");
+    position: absolute;
+    top: 270px;
+    left: 350px;
+    z-index: 4;
+}
+.e{
+    height: 400px;
+    width: 300px;
+    background-size: cover;
+    background-image: url("pictures/card5.jpg");
+    position: absolute;
+    top: 360px;
+    left: 450px;
+    z-index: 5;
+}

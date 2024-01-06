@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .a{
+            height: 100px;
+            width: 500px;
+            background-color: burlywood;
+            color: black;
+        }
+        .b{
+            height: 100px;
+            width: 500px;
+            position: relative;
+            top: 200px;
+            background-color: burlywood;
+            color: black;
+            overflow: hidden;/* this will hides the overflowed content */
+        }
+        .c{
+            height: 100px;
+            width: 500px;
+            background-color: burlywood;
+            color: black;
+            position: relative;
+            top: 100px;
+            left: 600px;
+            overflow: scroll;
+        }
+        .d{
+            height: 100px;
+            width: 200px;
+            background-color: burlywood;
+            color: black;
+            overflow: auto;
+            overflow-y: scroll;
+            position: relative;
+            top: 200px;
+            left: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id blanditiis ab dolorum modi quasi officia beatae reprehenderit animi magni voluptas provident doloremque quis es
+        se quas, labore harum tenetur fuga? Exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quibusdam minima doloremque laudantium accusantium labore optio magni laboriosam quo corrupti quaera
+        t, beatae alias, iure eligendi autem, qui harum quasi assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, qui incidunt. Quibusdam inventore, illum, numquam tempora velit eum perfer
+        endis maxime odio earum, archit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium vero dignissimos eveniet nesciunt sit necessitatibus. Repellendus adipisci, dolor totam autem
+         inventore sequi quia quidem veniam dolorum porro, dicta sint modi?ecto cum debitis ea illo fuga at reprehenderit
+    </div>
+    <div class="b">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id blanditiis ab dolorum modi quasi officia beatae reprehenderit animi magni voluptas provident doloremque quis es
+            se quas, labore harum tenetur fuga? Exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quibusdam minima doloremque laudantium accusantium labore optio magni laboriosam quo corrupti quaera
+            t, beatae alias, iure eligendi autem, qui harum quasi assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, qui incidunt. Quibusdam inventore, illum, numquam tempora velit eum perfer
+            endis maxime odio earum, archit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium vero dignissimos eveniet nesciunt sit necessitatibus. Repellendus adipisci, dolor totam autem
+             inventore sequi quia quidem veniam dolorum porro, dicta sint modi?ecto cum debitis ea illo fuga at reprehenderit
+    </div>
+    <div class="c">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id blanditiis ab dolorum modi quasi officia beatae reprehenderit animi magni voluptas provident doloremque quis es
+        se quas, labore harum tenetur fuga? Exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quibusdam minima doloremque laudantium accusantium labore optio magni laboriosam quo corrupti quaera
+        t, beatae alias, iure eligendi autem, qui harum quasi assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, qui incidunt. Quibusdam inventore, illum, numquam tempora velit eum perfer
+        endis maxime odio earum, archit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium vero dignissimos eveniet nesciunt sit necessitatibus. Repellendus adipisci, dolor totam autem
+         inventore sequi quia quidem veniam dolorum porro, dicta sint modi?ecto cum debitis ea illo fuga at reprehenderit
+    </div>
+    <div class="d">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id blanditiis ab dolorum modi quasi officia beatae reprehenderit animi magni voluptas provident doloremque quis es
+        se quas, labore harum tenetur fuga? Exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quibusdam minima doloremque laudantium accusantium labore optio magni laboriosam quo corrupti quaera
+        t, beatae alias, iure eligendi autem, qui harum quasi assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, qui incidunt. Quibusdam inventore, illum, numquam tempora velit eum perfer
+        endis maxime odio earum, archit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium vero dignissimos eveniet nesciunt sit necessitatibus. Repellendus adipisci, dolor totam autem
+         inventore sequi quia quidem veniam dolorum porro, dicta sint modi?ecto cum debitis ea illLorem ipsum, dolor sit amet consectetur adipisicing elit. Id blanditiis ab dolorum modi quasi officia beatae reprehenderit animi magni voluptas provident doloremque quis es
+         se quas, labore harum tenetur fuga? Exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quibusdam minima doloremque laudantium accusantium labore optio magni laboriosam quo corrupti quaera
+         t, beatae alias, iure eligendi autem, qui harum quasi assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, qui incidunt. Quibusdam inventore, illum, numquam tempora velit eum perfer
+         endis maxime odio earum, archit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium vero dignissimos eveniet nesciunt sit necessitatibus. Repellendus adipisci, dolor totam autem
+          inventore sequi quia quidem veniam dolorum porro, dicta sint modi?ecto cum debitis ea illo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id blanditiis ab dolorum modi quasi officia beatae reprehenderit animi magni voluptas provident doloremque quis es
+          se quas, labore harum tenetur fuga? Exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quibusdam minima doloremque laudantium accusantium labore optio magni laboriosam quo corrupti quaera
+          t, beatae alias, iure eligendi autem, qui harum quasi assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, qui incidunt. Quibusdam inventore, illum, numquam tempora velit eum perfer
+          endis maxime odio earum, archit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium vero dignissimos eveniet nesciunt sit necessitatibus. Repellendus adipisci, dolor totam autem
+           inventore sequi quia quidem veniam dolorum porro, dicta sint modi?ecto cum debitis ea illo o fuga at reprehenderit hi
+    </div>
+</body>
+</html>

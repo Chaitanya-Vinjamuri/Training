@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model in CSS</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        #a{
+            height: 400px;
+            width: 400px;
+            background-color: cadetblue;
+            float: left;
+
+        }
+        #b{
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            padding: 20px;
+            border: 2px solid red;
+            margin: 20px;
+            float: right;
+        }
+        #c{
+            height: 500px;
+            width: 1200px;
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Box Model in CSS</h1></center>
+    <p>when we apply the css box model properties to the division.then it effects height and width of the division <br>
+        first box has not appplied with any box properties so. height and width is 400* 400 px</p>
+    <div id="c">
+        <div id="a"></div>
+        <div id="b"></div>
+    </div>
+    <p>after applying the css box model properties to 2nd box then width and height are changed to <br>
+        height= 400+20+2+20=442px <br>
+        width= 400+20+2+20= 442px
+    </p>
+</body>
+</html>

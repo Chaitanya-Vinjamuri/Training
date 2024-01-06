@@ -1,0 +1,482 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.a{
+    height: 4200px;
+    width: 1500px;
+    background-color: maroon;
+}
+
+.c1{
+    height: 600px;
+    width: 748px;
+    background-color: red;
+    float: left;
+}
+.c2{
+    height: 600px;
+    width: 600px;
+    background-color: red;
+    float: right;
+    padding-right: 140px;
+
+}
+img{
+    height: 100%;
+    width: 100%;   
+}
+.b{
+    height: 800px;
+    width: 1500px;
+}
+.c{
+    height: 600px;
+    width: 1500px;
+    background-color: red;
+}
+.text1{
+    color: white;
+    padding-top: 140px;
+    padding-left: 500px;
+    float: left;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+.text3{
+    color: white;
+    padding-left: 580px;
+    float: left;
+    font-size: 30px;
+    font-family: 'Roboto';
+}
+.text2{
+    color: white;
+    padding-top: 100px;
+    padding-left: 600px;
+    float: left;
+    font-family:'Open Sans';
+}
+.num{
+    color: white;
+    float: left;
+    font-size: 120px;
+    margin-left: 500px;
+    margin-top: 10px;
+    font-family: 'Roboto';
+}
+.sample{
+    color: white;
+    font-size: 15px;
+    margin-top: 200px;
+    margin-left: 250px;
+    font-family:"Open Sans";
+}
+#a1{
+    width: 150px;
+    height: 7px;
+    background-color: white;
+    margin-left: 140px;
+    margin-top: 55px;
+    margin-left: 590px;
+}
+.z{
+    width: 850px;
+    height: 100%;
+    padding-bottom: 100px;
+}
+.d{
+    height: 600px;
+    width: 1500px;
+    background-color: black;
+}
+.d1{
+    height: 600px;
+    width: 750px;
+    float: left;
+
+}
+.d2{
+    height: 600px;
+    width: 750px;
+    float: right;
+}
+.no{
+    color: white;
+    font-size: 150px;
+    padding-left: 190px;
+    padding-top: 70px;
+}
+.t1{
+    color: white;
+    margin-top: 10px;
+    margin-left: 200px;
+    font-size: 30px;
+    font-family: Roboto;
+}
+.t2{
+    color: white;
+    margin-top: 10px;
+    margin-left: 200px;
+    font-size: 30px;
+    font-family: Roboto;
+}
+.t3{
+    color: white;
+    padding-top: 40px;
+    font-size: 18px;
+    padding-left: 160px;
+    font-family: "Open Sans";
+}
+.e{
+    height: 600px;
+    width: 1500px;
+    background-image:url("../Images/laptop.jpg");
+    background-size: cover;
+    position: relative;
+}
+.e1{
+    color: white;
+    position: absolute;
+    top: 370px;
+    left: 220px;
+    font-family: Roboto;
+    font-size: 40px;
+}
+.e2{
+    color: white;
+    position: absolute;
+    top: 420px;
+    left: 220px;
+    font-family: Roboto;
+    font-size: 40px;
+}
+.e3{
+    color: white;
+    position: absolute;
+    top: 470px;
+    left: 220px;
+    font-family: Roboto;
+    font-size: 40px;
+}
+.e4{
+    color: white;
+    position: absolute;
+    top: 520px;
+    left: 220px;
+    font-family: Roboto;
+    font-size: 40px;
+}
+.f{
+    height: 300px;
+    width: 1500px;
+    background-color: red;
+    position: relative;
+}
+.f1{
+    color: white;
+    position: absolute;
+    left: 670px;
+    top: 70px;
+}
+#a{
+    font-size: 50px;
+    position: absolute;
+    left: 650px;
+    color: white;
+    top: 130px;
+}
+#b{
+    font-size: 50px;
+    position: absolute;
+    color: white;
+    left: 720px;
+    top: 130px;
+}
+#c{
+    font-size: 50px;
+    position: absolute;
+    color: white;
+    left: 780px;
+    top: 130px;
+}
+#d{
+    font-size: 50px;
+    position: absolute;
+    color: white;
+    left: 840px;
+    top: 130px;
+}
+.fd{
+    width: 90px;
+    height: 7px;
+    background-color: white;
+    position: absolute;
+    top: 200px;
+    left: 730px;
+}
+.g{
+    height: 700px;
+    width: 1500px;
+    background-image: url("../Images/layoutt.jpg");
+    position: relative;
+}
+.g1{
+    width: 400px;
+    height: 500px;
+    border: 8px solid white;
+    position: absolute;
+    top: 70px;
+    left: 200px;
+}
+.g2{
+    background-image: url("../Images/dcef1.png");
+    background-size: cover;
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    top: 130px;
+    left: 100px;
+}
+.gt1{
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 200px;
+    font-size: 120px;
+    left: 270px;
+    color: white;
+    font-family: "Roboto";
+}
+.gt2{
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 320px;
+    font-size: 120px;
+    left: 300px;
+    color: white;
+    font-family: "Roboto";
+}
+.g3{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    left: 700px;
+    top: 80px;
+}
+.g4{
+    height: 400px;
+    width: 600px;
+    position: relative;
+    top: 40px;
+}
+.gt3{
+    color:red;
+    font-family: Roboto;
+    font-size: 50px;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
+.gt4{
+    color:white;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+}
+.gt5{
+    color: white;
+    font-family: "Open sans";
+    font-size: 16px;
+    position: absolute;
+    top: 350px;
+    left: 20px;
+
+}
+#a2{
+    width: 120px;
+    height: 7px;
+    background-color: white;
+    position: absolute;
+    top: 380px;
+    left: 20px;
+}
+.h{
+    height: 600px;
+    width: 1500px;
+    background-color: red;
+}
+.h1{
+    height: 600px;
+    width: 730px;
+    float: left;
+    position: relative;
+}
+.h2{
+    height: 600px;
+    width: 730px;
+    float: right;
+    position: relative;
+}
+.ht1{
+    color: white;
+    font-family: "Roboto";
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    font-size: 40px;
+}
+.ht2{
+    color: white;
+    font-family: "Roboto";
+    position: absolute;
+    top: 190px;
+    left: 100px;
+    font-size: 40px;
+}
+#z1{
+    position: absolute;
+    color: white;
+    height: 30px;
+    width: 120px;
+    left: 100px;
+    top: 250px;
+    font-family: "Open Sans";
+}
+#z2{
+    position: absolute;
+    color: white;
+    height: 30px;
+    width: 450px;
+    left: 100px;
+    top: 280px;
+    font-family: "Open Sans";
+}
+placeholder{
+    font-family: "Open Sans";
+}
+#z3{
+    position: absolute;
+    color: white;
+    height: 30px;
+    width: 450px;
+    left: 100px;
+    top: 320px;
+    font-family: "Open Sans";
+}
+#z4{
+    position: absolute;
+    color: white;
+    height: 30px;
+    width: 450px;
+    left: 100px;
+    top: 350px;
+    font-family: "Open Sans";
+}
+#z5{
+    position: absolute;
+    color: white;
+    height: 30px;
+    width: 450px;
+    left: 100px;
+    top: 390px;
+    font-family: "Open Sans";
+}
+#z6{
+    position: absolute;
+    color: white;
+    left: 100px;
+    top: 420px;
+    font-family: "Open Sans";
+}
+#z7{
+    position: absolute;
+    color: white;
+    height: 30px;
+    width: 80px;
+    background-color: red;
+    border: 1px solid white;
+    left: 100px;
+    top: 530px;
+    font-family: "Open Sans";
+}
+.y1{
+    font-size: 30px;
+    position: absolute;
+    left: 20px;
+    color: white;
+    font-family: Roboto;
+    top: 150px;
+}
+#w1{
+    font-size: 50px;
+    position: absolute;
+    left: 20px;
+    color: white;
+    top: 220px;
+}
+.y2{
+    font-size: 15px;
+    position: absolute;
+    font-family: "Open Sans";
+    left: 20px;
+    color: white;
+    top: 280px;
+}
+.y3{
+    font-size: 15px;
+    position: absolute;
+    font-family: "Open Sans";
+    left: 20px;
+    color: white;
+    top: 300px;
+}
+#w2{
+    font-size: 50px;
+    position: absolute;
+    left: 20px;
+    color: white;
+    top: 340px;
+}
+.y4{
+    font-size: 15px;
+    position: absolute;
+    font-family: "Open Sans";
+    left: 20px;
+    color: white;
+    top: 400px;
+}
+.y5{
+    font-size: 15px;
+    position: absolute;
+    font-family: "Open Sans";
+    left: 20px;
+    color: white;
+    top: 420px;
+}
+#w3{
+    font-size: 50px;
+    position: absolute;
+    left: 20px;
+    color: white;
+    top: 460px;
+}
+.y6{
+    font-size: 15px;
+    position: absolute;
+    font-family: "Open Sans";
+    left: 20px;
+    color: white;
+    top: 520px;
+}
+.y7{
+    font-size: 15px;
+    position: absolute;
+    font-family: "Open Sans";
+    left: 20px;
+    color: white;
+    top: 540px;
+}

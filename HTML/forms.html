@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>FORMS</title>
+    </head>
+    <body>
+        <center><h1>Form Elements and its Attributes</h1></center><hr><hr>
+        
+        <form action="">
+
+            <label for="">Enter first name:</label>
+            <input type="text" value="Chaitanya" disabled><br><br>
+            <label for="">enter last name:</label>
+            <input type="text" name="" value="Vinjamuri" readonly><br><br>
+            <label for="" >Enter Your ID</label>
+            <input type="number" autofocus autocomplete="on"><br><br>
+            <label for="">Telephone</label>
+            <input type="tel" maxlength="10"><br><br>
+            <label for="">Email:</label>
+            <input type="email" placeholder="Enter you Email"><br><br>
+            <label for="">Password:</label>
+            <input type="password" required><br><br>
+            <label for="">Gender:</label>
+            Male <input type="radio" name="gender"> Female <input type="radio" name="gender" id=""><br><br>
+            <label for="">Languages:</label><br>
+            C<input type="checkbox" name="lan" id="">
+            C++ <input type="checkbox" name="lan" id="">
+            Java <input type="checkbox" name="lan" id="">
+            Python <input type="checkbox" name="lan" id=""><br><br>
+            <label for="">Enter DOB:</label>
+            <input type="datetime-local">
+            <input type="date" name="" id=""><br><br>
+            <label for="">Choose any One:</label>
+            <select name="" id="">
+                <option value="1">AEC</option>
+                <option value="2">ACET</option>
+                <option value="3">ACOE</option> 
+            </select><br><br>
+            <label for="">Drop your Resume</label>
+            <input type="file"><br><br>
+            <label for="">Any Comments:</label><br>
+            <textarea name="" id="" cols="20" rows="2"></textarea><br><br>
+            <input type="submit" name="" id="">
+            <input type="reset" name="" id="">
+        </form>
+
+        <p>Form Attributes are: <br>value(default value for a field i.e autoentered),<br>
+                                readonly (or) disabled(It locks the form field i.e the user can't able to enter),<br>
+                                maxlength(Maximum length of the field.It is generally used for phone number),<br>
+                                placeholder(lighted text in the form fields),<br>
+                                required(must filled option) ,<br>
+                                autofocus(It always redirect to a common field when the page is refreshed),<br>
+                                autocomplete(It will give suggestions to the usesr about recently entered answers )
+
+            </p>
+    </body>
+</html>

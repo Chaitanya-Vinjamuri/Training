@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display properties</title>
+    <style>
+        #a{
+           border: 2px solid red; 
+        }
+        #b{
+            border: 2px solid red;
+        }
+        #c{
+            display: inline;
+            border: 2px solid red;
+        }
+        #d{
+            display: block;
+            border: 2px solid red;
+        }
+        .d{
+            height: 500px;
+            width: 1500px;
+        }
+        .a{
+            height: 400px;
+            width: 400px; 
+            background-color: aqua;
+            float: left;
+             display: none; /*It doesn't display the division in the output */
+        }
+        .b{
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            float: left;
+            margin-left: 90px;
+            visibility: hidden; /* It hides the content but the division property exits*/
+        }
+        .c{
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            float: right;
+            margin-right: 100px;
+           
+            
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Block-Inline conversion</h1></center><hr>
+    <p id="a">this is block level element</p><br>
+    <span id="b">This is inline level element</span><br><br><br>
+    <p id="c">Block level element</p><br><br><br>
+    <span id="d">Inline level element</span> <br>
+    <div class="d">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </div>
+</body>
+</html>

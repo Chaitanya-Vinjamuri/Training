@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Text Properties</title>
+        <style>
+            div{
+                height: 450px;
+                width: 1200px;
+                border: 3px solid greenyellow;
+            }
+            #a{
+                text-align: left;   /* left,right,center these are another 3 property values of text-align property*/
+                /* justify is nothing but it justifies the length and aligns the text upto the border */
+                text-transform: capitalize; /*lowercase and uppercase are another 2 property values of text-transform property */
+                
+            }
+            #b{
+                text-align: justify;
+                text-transform: lowercase; 
+
+
+                text-indent: 40px; /*this creates a space for the starting word */
+                letter-spacing: 3px; /* this creates space between letters*/
+                line-height: 20px;  /* this creates height space between lines*/
+                word-spacing: 4px; /* this creates a space between words */
+
+
+                /* white-space: nowrap; this property will displays the text in a single line*/
+                white-space: wrap;/* It keeps the text as no whitespaces*/
+                /* white-space: pre; this will display the paragraph content as in our code */
+                
+            }
+            h2{
+                text-align: center;
+                text-shadow: 20px 30px 4px red;
+                /* 1st value indicates that horizontal shadow value from the text
+                2nd value indicates that vertical shadow value from the text
+                3rd value indicates that blur effect of the shadow  */
+            }
+            h1{
+                text-shadow: 3px 3px 4px blue;
+            }
+            h3{
+                text-decoration: underline red double;
+                text-decoration: overline red double;
+                text-decoration: line-through blue dotted 6px;
+                /* underline,overline and line-through are the values of text-decoration */
+            }
+            #z{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <center><h1>Text Properties in CSS</h1></center><hr>
+        <h3>Text align Property</h3>
+        <center><div>
+            <p id="a">
+                Aditya, the premier promoter of quality education in the coastal districts of Andhra Pradesh for the past two decades, leads various institutions ranging from K.G to P.G besides professional colleges like Engineering, Pharmacy and Nursing. Sri Nallamilli Seshareddy as a founder chairman, promoted the educational society in the name and style of Aditya Academy at Kakinada in the year 1984, with a vision and mission to create a platform for holistic growth and success to students at all levels.
+
+                Aditya has made its entry into the educational arena with a public school to meet the needs of primary and secondary education. In succession and with rapid strides, the academy established a number of Junior Colleges, Degree Colleges, PG Colleges, Engineering Colleges, Pharmacy Colleges, Nursing Colleges, Teacher Training Institutions.
+
+                The silver-jubilee educational group with 50,000+ students in 50+ institutions with 5000+ staff across three districts in Andhra Pradesh has become the standard bearer for quality education. In every stream, Aditya has become a spring-board for success through its powered vision, constant innovation and professional excellence.
+            </p>
+            <p id="b">
+                Aditya, the premier promoter of quality education in the coastal districts of Andhra Pradesh for the past two decades, leads various institutions ranging from K.G to P.G besides professional colleges like Engineering, Pharmacy and Nursing. Sri Nallamilli Seshareddy as a founder chairman, promoted the educational society in the name and style of Aditya Academy at Kakinada in the year 1984, with a vision and mission to create a platform for holistic growth and success to students at all levels.
+
+                Aditya has made its entry into the educational arena with a public school to meet the needs of primary and secondary education. In succession and with rapid strides, the academy established a number of Junior Colleges, Degree Colleges, PG Colleges, Engineering Colleges, Pharmacy Colleges, Nursing Colleges, Teacher Training Institutions.
+
+                The silver-jubilee educational group with 50,000+ students in 50+ institutions with 5000+ staff across three districts in Andhra Pradesh has become the standard bearer for quality education. In every stream, Aditya has become a spring-board for success through its powered vision, constant innovation and professional excellence.
+            </p> <br><br>
+        </div></center> <hr><hr>
+        <h2>This is Shadow Effect</h2>
+        <a href="" id="z">Click!</a>
+        <a href="">Click!</a>
+        <p>Defaultly achor tag has underline.We can remove the underline through "text-decoration : none" property</p>
+
+    </body>
+</html>

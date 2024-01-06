@@ -1,0 +1,231 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.a{
+    width: 100%;
+    height: 1200px;
+    background-color: lightgrey;
+    position: relative;
+}
+.b{
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    font-size: 50px;
+    font-family: "Work Sans";
+}
+.c{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    top: 170px;
+}
+.d{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    top: 270px;
+}
+.sub1{
+    height: 250px;
+    width: 350px;
+    background-color: white;
+    position: absolute;
+    left: 150px;
+    top: 50px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0px 0px 8px black;
+}
+#q{
+    height: 20px;
+    width: 100%;
+    background-color:palevioletred;
+}
+#q1{
+    height: 20px;
+    width: 100%;
+    background-color:cyan;
+}
+.sub2{
+    height: 250px;
+    width: 350px;
+    background-color: white;
+    position: absolute;
+    left: 550px;
+    top: 50px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0px 0px 8px black;
+}
+.sub3{
+    height: 250px;
+    width: 350px;
+    background-color: white;
+    position: absolute;
+    left: 950px;
+    top: 50px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0px 0px 8px black;
+}
+#q2{
+    height: 20px;
+    width: 100%;
+    background-color: lightgreen;
+}
+.sub4{
+    height: 250px;
+    width: 350px;
+    background-color: white;
+    position: absolute;
+    left: 150px;
+    top: 350px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0px 0px 8px black;
+}
+#q3{
+    height: 20px;
+    width: 100%;
+    background-color: yellow;
+}
+.sub5{
+    height: 250px;
+    width: 350px;
+    background-color: white;
+    position: absolute;
+    left: 550px;
+    top: 350px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0px 0px 8px black;
+}
+#q4{
+    height: 20px;
+    width: 100%;
+    background-color: plum;
+}
+.sub6{
+    height: 250px;
+    width: 350px;
+    background-color: white;
+    position: absolute;
+    left: 950px;
+    top: 350px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0px 0px 8px black;
+}
+#q5{
+    height: 20px;
+    width: 100%;
+    background-color: pink;
+}
+.x{
+    background-color: palevioletred;
+    width: 200px;
+    height: 65px;
+    position: absolute;
+    left: 620px;
+    border-radius: 30px;
+    font-family: "Open Sans";
+}
+#w1{
+    height: 50px;
+    width: 50px;
+    background-color: palevioletred;
+    border-radius: 25px;
+    color: white;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 40px;
+    left: 50px;
+    top: 30px;
+}
+#w2{
+    height: 50px;
+    width: 50px;
+    background-color: cyan;
+    border-radius: 25px;
+    color: white;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 40px;
+    left: 50px;
+    top: 30px;
+}
+#w3{
+    height: 50px;
+    width: 50px;
+    background-color: lightgreen;
+    border-radius: 25px;
+    color: white;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 40px;
+    left: 50px;
+    top: 30px;
+}
+#w4{
+    height: 50px;
+    width: 40px;
+    background-color: yellow;
+    border-radius: 25px;
+    color: white;
+    position: absolute;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 40px;
+    left: 50px;
+    top: 30px;
+}
+#w5{
+    height: 50px;
+    width: 50px;
+    background-color: plum;
+    border-radius: 25px;
+    color: white;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 40px;
+    left: 50px;
+    top: 30px;
+}
+#w6{
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    left: 55px;
+    top: 40px;
+}
+.sp{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: pink;
+    position: absolute;
+    left: 50px;
+    top: 30px;
+}
+h5{
+    position: absolute;
+    font-family: "Open Sans";
+    font-size: 20px;
+    top: 100px;
+    left: 30px;
+}
+p{
+    font-family: "Open Sans";
+    font-size: 15px;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+}

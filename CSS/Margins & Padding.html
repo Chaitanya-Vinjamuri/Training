@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Margins & Padding</title>
+    </head>
+    <style>
+        body{
+            /* every webpage is applied with a constant padding and margins.To remove that we use 0px for margins & padding */
+            /* box-sizing: border-box; this property indicates that it is a box model */
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .a{
+            height: 300px;
+            width: 300px;
+            border: 2px solid orange;
+           margin: 40px;
+           display: inline-block;
+           margin: 2px solid red;
+        }
+        .b{
+            height: 300px;
+            width: 300px;
+            border-style: solid;
+            border-color: rebeccapurple red blue pink;
+            /* we need to mention the border style before applying the multiple colors to it */
+            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 40px;
+            margin-right: 50px;
+            display: inline-block;
+        }
+        #c1{
+            height: 200px;
+            width: 300px;
+            border: 2px solid red;
+            float: left;
+            margin-left: 40px;
+            /* padding-left: 150px;
+            padding-top: 150px; */
+            
+            /* id selector can't take number as first letter of id */
+            /* float: left; is a property which will place multiple elements in a row */
+        }
+        h2{
+            padding-left: 100px;
+            padding-right: 90px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+
+        }
+    </style>
+    <body>
+        <center><h1>Margins & Padding   in CSS</h1></center><hr>
+        <div class="a"></div>
+        <div class="b"></div>
+        <p>The first box has common margin for all the sides of a box</p>
+        <p>The second box has various margins for all sides of box</p>
+        <p>Margin will create space in outside of the html elements</p>
+        <p>Padding will create space in inside of html element</p>
+        <div id="c1">
+            <h2>Division 1</h2>
+        </div>
+        <div id="c1">
+            <h2>Division 2</h2>
+        </div>
+        <div id="c1">
+            <h2>Division 3</h2>
+        </div>
+    </body>
+</html>

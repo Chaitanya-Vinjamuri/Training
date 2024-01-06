@@ -1,0 +1,77 @@
+.a{
+    height: 400px;
+    width: 1200px;
+    position: relative;
+    top: 250px;
+    background-color: cadetblue;
+}
+.b{
+    height: 350px;
+    width: 250px;
+    position: absolute;
+    background-color: white;
+    left: 50px;
+    bottom: 90px;
+    box-shadow: 3px 0px 5px 2px black; /* 4th value of box-shadow will increase the brightness */
+}
+.b1{
+    height: 60px;
+    background-color: orange;
+    border-radius: 30px;
+    width: 60px;
+    top: 30px;
+    left: 90px;
+    position: absolute;
+}
+#a{
+    position: absolute;
+    top: 90px;
+    left: 60px;
+}
+#b{
+    font-family: "Open Sans";
+    position: absolute;
+    top: 130px;
+}
+a{
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: 300px;
+    left: 90px;
+}
+#c{
+    height: 3px;
+    width: 70px;
+    position: absolute;
+    background-color: black;
+    top: 320px;
+    left: 85px;
+}
+.c{
+    height: 350px;
+    width: 250px;
+    position: absolute;
+    background-color: white;
+    left: 330px;
+    bottom: 170px;
+    box-shadow: 3px 0px 5px 2px black;
+}
+.d{
+    height: 350px;
+    width: 250px;
+    position: absolute;
+    background-color: white;
+    left: 610px;
+    bottom: 90px;
+    box-shadow: 3px 0px 5px 2px black;
+}
+.e{
+    height: 350px;
+    width: 250px;
+    position: absolute;
+    background-color: white;
+    left: 890px;
+    bottom: 170px;
+    box-shadow: 3px 0px 5px 2px black;
+}

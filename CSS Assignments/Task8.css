@@ -1,0 +1,18 @@
+.a{
+    height: 600px;
+    width: 100%;
+    background-color: aqua;
+    position: relative;
+}
+.x1{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    left: 30px;
+}
+.x2{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    left: 350px;
+}

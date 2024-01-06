@@ -1,0 +1,36 @@
+.cls{
+    border:  5px solid violet;
+    background-color: rgb(49, 114, 54);
+    font-size: 20px;
+}
+#colorbox{
+    border: 5px solid blue;
+}
+span{
+    border: 3px solid red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    border: 2px solid black;
+}
+input[type="text"]{
+    color: red;
+}
+a[href]{
+    color: rgb(117, 40, 181);
+}
+a:visited{
+    color: rgb(57, 137, 166);
+}
+a:hover{
+    font-size: 20px;
+}
+a:active{
+    color: red;
+}
+
+/* visited attribute is used to change the color when the link is visited.
+hover attribute is used to highlight the link when the cursor is placed on the link.
+active attribute is used to give a color when link is clicked */

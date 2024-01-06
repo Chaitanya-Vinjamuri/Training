@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Fonts in CSS</title>
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Damion |Trio Telugu |Satisfy">
+
+
+        <!-- we have to link the google fonts api to href attribute -->
+        <!-- download a new font from the Google Fonts website,
+        extract the font file in the same folder,
+        after extract open the font file of downloads folder then click on download button to install the font in your system -->
+        
+        <!-- In the api link,
+        change the font name to new font in family attribute of the link
+        Then,
+        apply the font-family attribute of <style></style> tag to use the new font -->
+        <!-- we can link directly without downloading font but when we link the font it must connect to internet -->
+
+        <style>
+            #a{
+                font-family:'Damion';
+            }
+            #c{
+                font-family: 'Satisfy';
+                font-weight: bolder; /*ligher,bold*/
+                font-style: italic;
+            }
+            .d{
+                color: blue;
+            }
+            #c{
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p id="a">This is a Damion Font</p>
+        <p id="b">మానవజాతి అంతఃకరణమును క్షోభపెట్టిన ఘోరచర్యలు, మానవస్వత్వములయెడ గలిగిన అవజ్ఞా నిరసన భావముల</p>
+        <p id="c">This is Satisfy Font</p>
+        <p id="c" class="d">hello</p>
+    </body>
+
+</html>
