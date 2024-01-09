@@ -1,0 +1,194 @@
+.a{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    float: left;
+    border: 1px solid red;
+}
+.a:hover{
+    transform: translate(40px, 50px);
+    /* this is a transform property in css which has translate() function is used to transform the current division position to a new position when its hovered by cursor; */
+}
+.b{
+    height: 300px;
+    width: 300px;
+    background-color: lightblue;
+    float: left;
+    border: 1px solid red;
+}
+.b:hover{
+    transform: translateX(30px);
+}
+.c{
+    height: 300px;
+    width: 300px;
+    background-color: greenyellow;
+    float: left;
+    border: 1px solid red;
+}
+#threeD{
+    height: 300px;
+    width: 300px;
+    background-color: lime;
+    float: left;
+}
+#threeD:hover{
+    transform: translate3d(30px,70px,455px);
+}
+.c:hover{
+    transform: translateY(50px);
+}
+.d{
+    height: 300px;
+    width: 300px;
+    background-color: plum;
+    position: absolute;
+    top: 400px;
+    border: 1px solid red;
+}
+.d:hover{
+    /* anti-clockwise direction */
+    transform: rotate(60deg);
+    /* after using this property the division will rotate 60 degrees to left side */
+}
+.e{
+    height: 300px;
+    width: 300px;
+    background-color:lightsalmon;
+    position: absolute;
+    top: 400px;
+    left: 350px;
+    border: 1px solid red;
+}
+.e:hover{
+    /* clockwise direction */
+    transform: rotate(-60deg);
+    /* after using this property the division will rotate 60 degrees to right side */
+}
+
+.f1{
+    height: 150px;
+    width: 150px;
+    background-color: aquamarine;
+    position: absolute;
+    top: 850px;
+    border: 1px solid red;
+}
+.f1:hover{
+    transform: scale(2);
+}
+.f2{
+    height: 150px;
+    width: 150px;
+    background-color:lavender;
+    position: absolute;
+    top: 850px;
+    left: 250px;
+    border: 1px solid red;
+}
+.f2:hover{
+    transform: scale(2,4);
+}
+.g{
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    position: absolute;
+    top: 850px;
+    left: 500px;
+    border: 1px solid red;
+}
+.g:hover{
+    transform: scaleX(2);
+}
+.h{
+    height: 150px;
+    width: 150px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 850px;
+    left: 800px;
+    border: 1px solid red;
+}
+.h:hover{
+    transform: scaleY(2);
+}
+
+.i1{
+    height: 200px;
+    width: 200px;
+    background-color: lightgoldenrodyellow;
+    position: absolute;
+    top: 1150px;
+    border: 1px solid red;
+}
+.i1:hover{
+    transform: skew(30deg);
+}
+
+.i2{
+    height: 200px;
+    width: 200px;
+    background-color: lightpink;
+    position: absolute;
+    top: 1150px;
+    left: 300px;
+    border: 1px solid red;
+}
+.i2:hover{
+    transform: skew(30deg,10deg);
+}
+
+.j{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    position: absolute;
+    top: 1150px;
+    left: 600px;
+    border: 1px solid red;
+}
+.j:hover{
+    transform: skewX(20deg);
+}
+
+.k{
+    height: 200px;
+    width: 200px;
+    background-color: lightcoral;
+    position: absolute;
+    top: 1150px;
+    left: 900px;
+    border: 1px solid red;
+}
+.k:hover{
+    transform: skewY(10deg);
+}
+
+.l1{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 1550px;
+    border: 1px solid red;
+}
+
+.l1:hover{
+    transform: matrix(2,-0.3,5,3,4,3);
+    /* we can also give value 0 - if you dont want to apply any particular property */
+}
+
+.l2{
+    height: 200px;
+    width: 200px;
+    background-color: lightseagreen;
+    position: absolute;
+    top: 1550px;
+    left: 350px;
+    border: 1px solid red;
+}
+
+.l2:hover{
+    transform: matrix(3,2,1,0,0,0);
+}

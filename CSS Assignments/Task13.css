@@ -26,8 +26,7 @@
     left: 30px;
     font-size: 15px;
 }
-#t3{
-    
+#t3{ 
     font-family: "Inter";
     position: absolute;
     top: 55px;
@@ -42,6 +41,94 @@
     font-family: "Inter";
     top: 174px;
     left: 185px;
+}
+#t5{
+    position: absolute;
+    color: white;
+    font-family: "Inter";
+    font-size: 25px;
+    top: 10px;
+    left: 20px;
+}
+#t6{
+    position: absolute;
+    color: white;
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: lighter;
+    top: 70px;
+    left: 20px;
+}
+#t7{
+    position: absolute;
+    color: white;
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: lighter;
+    top: 100px;
+    left: 20px;
+}
+#t8{
+    position: absolute;
+    color: white;
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: lighter;
+    top: 130px;
+    left: 20px;
+}
+#t9{
+    position: absolute;
+    color: white;
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: lighter;
+    top: 150px;
+    left: 540px;
+}
+#t10{
+    position: absolute;
+    color: white;
+    font-family: "Inter";
+    font-size: 25px ;
+    font-weight: bold;
+    top: 10px;
+    left: 20px;
+}
+#t11{
+    position: absolute;
+    color: white;
+    font-family: "Inter";
+    font-size: 15px;
+    top: 0px;
+    left: 20px;
+}
+#t12{
+    position: absolute;
+    color: white;
+    font-family: "Inter";
+    font-size: 13px;
+    font-weight: lighter;
+    top: 120px;
+    left: 20px;
+}
+#t13{
+    position: absolute;
+    color: white;
+    font-family: "Inter";
+    font-size: 13px;
+    font-weight: lighter;
+    top: 140px;
+    left: 20px;
+}
+#t14{
+    position: absolute;
+    color: white;
+    font-family: "Inter";
+    font-size: 13px;
+    font-weight: lighter;
+    top: 160px;
+    left: 20px;
 }
 .but1{
     position: absolute;
@@ -98,5 +185,73 @@
     height: 600px;
     width: 800px;
     float: right;
-    background-color: aqua;
+    position: relative;
+}
+.c21{
+    height: 200px;
+    position: absolute;
+    width: 700px;
+    background-color: blue;
+    border-radius: 20px;
+    left: 50px;
+    top: 30px;
+}
+.i1{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 520px;
+    top: 20px;
+}
+.i2{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+.c22{
+    height: 330px;
+    position: absolute;
+    width: 700px;
+    background-color: blue;
+    border-radius: 20px;
+    left: 50px;
+    top: 250px;
+}
+.r1{
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    background-color: goldenrod;
+    left: 20px;
+    top: 100px;
+    border-radius: 20px;
+}
+.r2{
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    background-color: goldenrod;
+    left: 190px;
+    top: 100px;
+    border-radius: 20px;
+}
+.r3{
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    background-color: goldenrod;
+    left: 360px;
+    top: 100px;
+    border-radius: 20px;
+}
+.r4{
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    background-color: goldenrod;
+    left: 530px;
+    top: 100px;
+    border-radius: 20px;
 }

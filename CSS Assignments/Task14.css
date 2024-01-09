@@ -1,0 +1,232 @@
+.a{
+    height: 700px;
+    width: 1000px;
+    background-color: lightblue;
+    border: 5px solid black;
+    position: relative;
+    border-radius: 30px;
+}
+.but{
+    color: white;
+    background-color: blue;
+    height: 30px;
+    width: 130px;
+    border-radius: 20px;
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+#l1{
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 107px;
+    left: 30px;
+    font-family: "Inter";
+}
+#l2{
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 157px;
+    left: 30px;
+    font-family: "Inter";
+}
+#l3{
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 207px;
+    left: 30px;
+    font-family: "Inter";
+}
+#l4{
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 237px;
+    left: 30px;
+    font-family: "Inter";
+}
+#i1{
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 20px;
+    height: 25px;
+    width: 250px;
+    top: 100px;
+    left: 110px;
+    font-family: "Inter";
+}
+#i2{
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 150px;
+    height: 25px;
+    width: 250px;
+    border-radius: 20px;
+    left: 110px;
+    font-family: "Inter";
+}
+#i3{
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 200px;
+    height: 25px;
+    width: 250px;
+    border-radius: 20px;
+    left: 110px;
+    font-family: "Inter";
+}
+#i4{
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 260px;
+    border-radius: 10px;
+    left: 30px;
+    font-family: "Inter";
+}
+#t1{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Inter";
+}
+#t2{
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-family: "Inter";
+}
+#t3{
+    font-family: "Inter";
+    top: 80px;
+    left: 30px;
+    position: absolute;
+    font-size: 10px;
+}
+#t4{
+    font-family: "Inter";
+    top: 80px;
+    left: 280px;
+    position: absolute;
+    font-size: 10px;
+}
+#t5{
+    font-family: "Inter";
+    top: 80px;
+    left: 470px;
+    position: absolute;
+    font-size: 10px;
+}
+#t6{
+    font-family: "Inter";
+    top: 80px;
+    left: 700px;
+    position: absolute;
+    font-size: 10px;
+}
+.b{
+    position: relative;
+    top: 30px;
+    height: 400px;
+    width: 900px;
+}
+.b1{
+    height: 400px;
+    width: 500px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    float: left;
+    background-color: lightcyan;
+}
+.b2{
+    height: 400px;
+    width: 400px;
+    float: right;
+}
+iframe{
+    height: 400px;
+    width: 400px;
+}
+.c{
+    position: relative;
+    top: 60px;
+    height: 150px;
+    width: 900px;
+}
+#z1{
+    color: white;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 80px;
+    top: 40px;
+}
+#z2{
+    color: white;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 300px;
+    top: 40px;
+}
+#z3{
+    color: white;
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    position: absolute;
+    left: 520px;
+    top: 35px;
+}
+#z4{
+    color: white;
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    position: absolute;
+    left: 740px;
+    top: 35px;
+}
+.z11{
+    background-color: blue;
+    height: 40px;
+    border-radius: 20px;
+    width: 40px;
+    position: absolute;
+    left: 80px;
+    top: 30px;
+}
+.z12{
+    background-color: blue;
+    height: 40px;
+    border-radius: 20px;
+    width: 40px;
+    position: absolute;
+    left: 300px;
+    top: 30px;
+}
+.z13{
+    background-color: blue;
+    height: 40px;
+    border-radius: 20px;
+    width: 40px;
+    position: absolute;
+    left: 520px;
+    top: 30px;
+}
+.z14{
+    background-color: blue;
+    height: 40px;
+    border-radius: 20px;
+    width: 40px;
+    position: absolute;
+    left: 740px;
+    top: 30px;
+}
