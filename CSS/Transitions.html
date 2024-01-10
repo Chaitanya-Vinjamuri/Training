@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .a{
+            height: 300px;
+            width: 300px;
+            background-color: blueviolet;
+            border: 5px solid blue;
+            /* transition-delay: 2s; this transition property can be applied at division style or hover of division style */
+            /* transition-timing-function: ease;
+            transition-timing-function: ease-in;
+            transition-timing-function: ease-in-out;
+            transition-timing-function: ease-out; */
+        }
+        .a:hover{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            /* transition-duration: 4s; */
+            border-radius: 200px;
+             transition: all 10s ease-in-out 3s;  /*short hand property*/
+             /* 2nd value is duration */
+             /* 4th value is transition delay */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+</body>
+</html>

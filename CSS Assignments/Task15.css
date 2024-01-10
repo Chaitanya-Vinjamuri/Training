@@ -1,0 +1,255 @@
+.a{
+    height: 750px;
+    width: 1000px;
+    background-color: bisque;
+    border-radius: 20px;
+}
+.b{
+    height: 750px;
+    width: 500px;
+    background-color: lightblue;
+    float: left;
+    position: relative;
+}
+.c{
+    height: 750px;
+    width: 500px;
+    background-color: azure;
+    float: right;
+    position: relative;
+}
+.i1{
+    height: 400px;
+    position: absolute;
+    width: 500px;
+    left: 0px;
+    top: 100px ;
+}
+#t1{
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-family: "Inter";
+    font-weight: bolder;
+}
+#t2{
+    font-size: 30px;
+    position: absolute;
+    left: 20px;
+    top: 460px;
+    font-family: "Inter";
+    font-weight: bolder;
+}
+#t3{
+    font-size: 13px;
+    position: absolute;
+    left: 20px;
+    top: 540px;
+    font-family: "Inter";
+    font-weight:lighter;
+}
+.w1{
+    height: 40px;
+    width: 150px;
+    font-family: "Inter";
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    text-align: center;
+}
+#icon1{
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    top: 60px;
+    left: 30px;
+}
+.w2{
+    height: 40px;
+    width: 150px;
+    font-family: "Inter";
+    position: absolute;
+    top: 50px;
+    left: 260px;
+    text-align: center;
+}
+#icon2{
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    top: 60px;
+    left: 270px;
+}
+.w3{
+    height: 40px;
+    width: 300px;
+    font-family: "Inter";
+    position: absolute;
+    text-align: center;
+    top: 130px;
+    left: 20px;
+}
+#icon3{
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    top: 140px;
+    left: 40px;
+}
+.w4{
+    height: 40px;
+    width: 300px;
+    font-family: "Inter";
+    position: absolute;
+    text-align: center;
+    top: 210px;
+    left: 20px;
+}
+#icon4{
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    top: 220px;
+    left: 40px;
+}
+.w5{
+    height: 40px;
+    width: 60px;
+    border: 2px solid white;
+    font-family: "Inter";
+    position: absolute;
+    text-align: center;
+    top: 213px;
+    left: 70px;
+}
+.w6{
+    height: 40px;
+    width: 300px;
+    font-family: "Inter";
+    position: absolute;
+    text-align: center;
+    top: 280px;
+    left: 20px;
+}
+#icon5{
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    top: 290px;
+    left: 40px;
+}
+.w7{
+    height: 40px;
+    width: 200px;
+    font-family: "Inter";
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    text-align: center;
+}
+#icon6{
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    top: 360px;
+    left: 40px;
+}
+.w8{
+    height: 40px;
+    width: 200px;
+    font-family: "Inter";
+    position: absolute;
+    top: 350px;
+    left: 260px;
+    text-align: center;
+}
+#icon7{
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    top: 360px;
+    left: 280px;
+}
+.but1{
+    font-family: "Inter";
+    background-color: blue;
+    color: white;
+    height: 50px;
+    width: 450px;
+    position: absolute;
+    top: 450px;
+    left: 30px;
+}
+#text1{
+    position: absolute;
+    color: black;
+    font-family: "Inter";
+    top: 504px;
+    left: 230px;
+}
+.l1{
+    width: 185px;
+    height: 2px;
+    background-color: gray;
+    position: absolute;
+    left: 255px;
+    top: 530px;
+}
+.l2{
+    width: 170px;
+    height: 2px;
+    background-color: gray;
+    position: absolute;
+    left: 50px;
+    top: 530px;
+}
+.but2{
+    font-family: "Inter";
+    background-color: darkblue;
+    color: white;
+    height: 50px;
+    width: 450px;
+    position: absolute;
+    top: 560px;
+    left: 30px;
+}
+.but3{
+    font-family: "Inter";
+    background-color: lightblue;
+    color: white;
+    height: 50px;
+    width: 450px;
+    position: absolute;
+    top: 630px;
+    left: 30px;
+}
+#icon8{
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 575px;
+    left: 120px;
+    
+}
+#icon9{
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 645px;
+    left: 120px;   
+}
+#text2{
+    top: 690px;
+    position: absolute;
+    left: 130px;
+    color: black;
+    font-family: "Inter";
+}
+#text3{
+    top: 690px;
+    position: absolute;
+    left: 300px;
+    color:blue;
+    font-family: "Inter";
+}
