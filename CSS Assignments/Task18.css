@@ -1,0 +1,182 @@
+.a{
+    width: 1000px;
+    height: 700px;
+    position: relative;
+    top: 15px;
+    background-color:chartreuse;
+    border: 5px groove gold;
+}
+.b{
+    width: 400px;
+    height: 700px;
+    float: left;
+    background-color: cadetblue;
+    position: relative;
+}
+.c{
+    width: 600px;
+    height: 700px;
+    float: right;
+    background-color:white;
+    position: relative;
+}
+#t1{
+    font-size: 35px;
+    color: white;
+    font-family: "Inter";
+    position: absolute;
+    left: 50px;
+    top: 220px;
+}
+#t2{
+    font-family: "Inter";
+    font-size: 17px;
+    color: white;
+    position: absolute;
+    font-weight: lighter;
+    top: 320px;
+    left: 50px;
+}
+#t3{
+    font-size: 40px;
+    color: cadetblue;
+    font-family: "Inter";
+    position: absolute;
+    left: 150px;
+    top: 100px;
+}
+#t4{
+    font-size: 20px;
+    color: lightgray;
+    font-family: "Inter";
+    position: absolute;
+    left: 160px;
+    top: 270px;
+}
+.but1{
+    height: 60px;
+    width: 250px;
+    border-radius: 30px;
+    position: absolute;
+    top: 430px;
+    left: 60px;
+    background-color: cadetblue;
+    border: 3px solid white;
+    color: white;
+}
+.d1{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    position: absolute;
+    top: 200px;
+    left: 190px;
+    border: 2px solid lightgray;
+}
+.d2{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    position: absolute;
+    top: 200px;
+    left: 280px;
+    border: 2px solid lightgray;
+}
+.d3{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    position: absolute;
+    top: 200px;
+    left: 370px;
+    border: 2px solid lightgray;
+}
+.i1{
+    position: absolute;
+    top: 210px;
+    font-size: 30px;
+    color: black;
+    left: 205px;
+}
+.i2{
+    position: absolute;
+    top: 210px;
+    font-size: 30px;
+    color: black;
+    left: 290px;
+}
+.i3{
+    position: absolute;
+    top: 210px;
+    font-size: 30px;
+    color: black;
+    left: 383px;
+}
+.w1{
+    height: 40px;
+    width: 380px;
+    font-family: "Inter";
+    position: absolute;
+    background-color: lightblue;
+    border-radius: 20px;
+    top: 380px;
+    border-color:white;
+    left: 120px;
+    text-align: center;
+}
+#icon1{
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    top: 390px;
+    left: 140px;
+}
+.w2{
+    height: 40px;
+    width: 380px;
+    font-family: "Inter";
+    position: absolute;
+    background-color: lightblue;
+    border-radius: 20px;
+    top: 440px;
+    border-color:white;
+    left: 120px;
+    text-align: center;
+}
+#icon2{
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    top: 450px;
+    left: 140px;
+}
+.w3{
+    height: 40px;
+    width: 380px;
+    font-family: "Inter";
+    position: absolute;
+    background-color: lightblue;
+    border-radius: 20px;
+    top: 500px;
+    border-color:white;
+    left: 120px;
+    text-align: center;
+}
+#icon3{
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    top: 510px;
+    left: 140px;
+}
+.but2{
+    height: 60px;
+    width: 250px;
+    border-radius: 30px;
+    position: absolute;
+    top: 570px;
+    left: 180px;
+    background-color: cadetblue;
+    border: 3px solid white;
+    color: white;
+}

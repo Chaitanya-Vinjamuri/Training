@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--  width=device-width this property allows to adjust the content as per the device  -->
+    <!-- these meta tags are useful i.e. it can adjust the website content to screen size of the device -->
+    <!-- but it has a drawback such that it can adjust the content but it cant set completely to particular dimensions.this leads to some extra space after all divisions are placed as per screen -->
+    <!-- we can rectify this drawback by using media queries of property- "min-width,max-width" -->
+    <title>Document</title>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        .a{
+            text-align: center;
+            color: black;
+            position: static;
+            top: 350px;
+            justify-content: center;
+            font-size: 30px;
+            width: 200px;
+            height: 50px;
+            left: 650px;
+            border: 5px solid red;
+            border-radius: 20px;
+        }
+        @media screen and (min-width:400px) and (max-width:600px){ /* this indicates that the styles inside this function applied when it is screen,minimum width and maximum width is satisfied as per the screen */
+            /* and is the operator which is used to apply when all conditions are satisfied */
+            body{
+                background-color: blueviolet;
+            }
+            .a{
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- media queris is used to fit the website view as per the viewing device -->
+    <!-- this is also known as responsive webpages -->
+    <!-- visible content of website is called view port -->
+    <!-- based on this view port we create responsives to website -->
+    <!-- bootstrap has inbuild website responsiveness but we can make responsiveness by css also by using this media queries -->
+    <!-- they are various devices like laptop,desktop,mobile etc the moto is to adjust the website as per the device view -->
+    <div class="a">This is content</div>
+</body>
+</html>
