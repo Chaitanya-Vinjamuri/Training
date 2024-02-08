@@ -1,0 +1,24 @@
+
+#a{
+    background-image: url("pictures/task_pic.jpg");
+    background-size: cover;
+    height: 550px;
+}
+#b{
+    margin-top: 150px;
+}
+#c{
+    margin-top: 50px;
+}
+img{
+    width: 100%;
+}
+.s1{
+    width: 100%;
+}
+.z1{
+    background-color: black;
+}
+.e:hover{
+    border-width: 4px;
+}

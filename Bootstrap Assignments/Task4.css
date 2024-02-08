@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(230, 230, 230);
+}
+#b1,#b2,#b3{
+    color: skyblue;
+}
+#o1,#o2,#o3{
+    color: orange;
+}
+#g1,#g2,#g3{
+    color: green;
+}
+#p1,#p2,#p3{
+    color: rgb(255, 0, 43);
+}

@@ -1,0 +1,19 @@
+.b1{
+    width: 100%;
+}
+.f{
+    background-color: 316FF6;
+    color: white;
+}
+.t{
+    background-color: 1DA1F2;
+    color: white;
+}
+.f:hover{
+    background-color: blue;
+    color: white;
+}
+.t:hover{
+    background-color: blue;
+    color: white;
+}

@@ -114,15 +114,15 @@
 }
 .w1{
     height: 40px;
-    width: 380px;
+    width: 350px;
     font-family: "Inter";
     position: absolute;
     background-color: lightblue;
     border-radius: 20px;
     top: 380px;
     border-color:white;
+    padding-left: 50px;
     left: 120px;
-    text-align: center;
 }
 #icon1{
     font-size: 25px;
@@ -133,7 +133,7 @@
 }
 .w2{
     height: 40px;
-    width: 380px;
+    width: 350px;
     font-family: "Inter";
     position: absolute;
     background-color: lightblue;
@@ -141,7 +141,7 @@
     top: 440px;
     border-color:white;
     left: 120px;
-    text-align: center;
+    padding-left:50px;
 }
 #icon2{
     font-size: 25px;
@@ -152,7 +152,7 @@
 }
 .w3{
     height: 40px;
-    width: 380px;
+    width: 350px;
     font-family: "Inter";
     position: absolute;
     background-color: lightblue;
@@ -160,7 +160,7 @@
     top: 500px;
     border-color:white;
     left: 120px;
-    text-align: center;
+    padding-left:50px;
 }
 #icon3{
     font-size: 25px;

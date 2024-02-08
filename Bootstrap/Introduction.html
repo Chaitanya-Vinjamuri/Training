@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Introduction</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    these are online bootstrap api links -->
+    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- these are offline links because these are downloaded from the website and extracted to our folder -->
+</head>
+<body>
+    <h1>This is Bootstrap</h1>
+    <!-- bootstrap is available in online or offline versions -->
+    <!-- bootstrap defines every element in html and css has a different styles -->
+    <!-- default styles are not applied when bootstrap links are linked to html page -->
+    <!-- bootstrap is useful for dynamic responsiveness -->
+    <!-- we will use the build in api links to use the bootstrap -->
+    <!-- internet is required to use the bootstrap api links because it will redirect from the bootstrap server -->
+    <!-- offline version doesn't require internet,we need to download the file and the import the css and js files of bootstrap to use them in html file without internet -->
+
+    <!-- Grid System -->
+    <!-- this is a system which helps to divide the screen into multople partitions -->
+    <!-- 1 row is equals to 12 columns -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 bg-primary"> <!-- bg-primary is the background color -->
+                <p>Heading</p>    <!-- md is medium and 3 is the partition count i.e. 4columns are required 3*4=12 columns -->
+            </div>                  <!-- xs,sm,md,lg,xl,xxl  are the sizes i.e. xtra small,small,large,xl,xxl -->
+            <div class="col-md-3 bg-success">
+                <p>Heading</p>
+            </div>
+            <div class="col-md-3 bg-danger">
+                <p>Heading</p>
+            </div>
+            <div class="col-md-3 bg-warning">
+                <p>Heading</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
