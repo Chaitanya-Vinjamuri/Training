@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatypes in JS</title>
+</head>
+<body>
+    <!-- let,var,const determines the variable  -->
+
+
+    <!-- They are 8 datatypes in Javavscript such as:
+    1. string
+    2. number
+    3. boolean
+    4. undefined
+    5. Null
+    6. Arrays
+    7. Objects -->
+
+    <!-- the text inside single quote or double qoute then it will considered as string -->
+    <!-- no quotes are used to declare the number -->
+    <!-- boolean is used to take the conditions are true or false -->
+    <!-- undefined datatype doesn't contains any of data inside i.e. empty variable -->
+    <!-- null datatype is defined as an object -->
+    <!-- If you want to declare multiple values of a diffent datatypes then we use the array datatype -->
+    <!-- If you want to declare multiple values of a different datatypes with a specified id i.e. key & value pair then we use the object datatype -->
+
+
+    <script>
+        // string
+        let college="Aditya"
+        console.log(college)
+        console.log(typeof(college))
+
+        //number
+        let a1=3452
+        console.log(a1)
+        console.log(typeof(a1))
+
+        //boolean
+        let no=true
+        console.log(no)
+        console.log(typeof(no))
+
+        //undefined
+        let fsd;
+        console.log(typeof(fsd))
+
+        //null
+        let e1=null
+        console.log(typeof(e1))
+
+        //array
+        let arr1=["ramu","ravi","vijay"]
+        console.log(arr1)
+        console.log(typeof(arr1))
+        let arr2=["aec","acet","acoe",249,null,undefined]
+        console.log(arr2)
+        arr2[1]="aditya" //re-assigning the object value
+        console.log(arr2[1])
+        console.log(arr2.length)
+        
+
+        //object
+        // we can use the dot noatation(.) or array notation( [] ) to access the property of an object
+        // left side part is "key" and right side part is "value"
+        // key value must be a string and value may be any of the type
+        // accessing the item is possible only through the key
+        let obj={
+                    name:'hari',
+                    id:5464,
+                    college:"Aditya"
+                }
+        console.log(obj)
+        console.log(typeof(obj))
+        console.log(obj.name) //dot notation to access a particular key
+        console.log(obj['name']) // array notation is also similar to dot but we use [] then "" or '' are used insde the [] to access the value from particular key of object
+        obj.name="vijay" // changing the key
+        console.log(obj.name)
+        obj.age=25 // adding new key&value pair
+        console.log(obj)
+        console.log(obj.age)
+        delete obj.age // removing a key&value pair
+        console.log(obj)
+        // check weather the element exists or not. The output will return true or false
+        console.log("name" in obj)
+        console.log("age" in obj)
+    </script>
+</body>
+</html>

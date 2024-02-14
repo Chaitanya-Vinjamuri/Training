@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple users in an objects</title>
+</head>
+<body>
+    <script>
+        //the data in between of {} is referred as 0th index of an array
+        // this is known as Array of Objects
+        let arr1=
+                [
+                    {
+                        name:"user1",
+                        no:1,
+                        college:"aec"
+                    }, 
+                    {
+                        name:"user2",
+                        no:2,
+                        college:"acet"
+                    },
+                    {
+                        name:"user3",
+                        no:3,
+                        college:"acoe"
+                    },
+                ]
+        console.log(arr1)
+        console.log(arr1[0]) // accessing 0th index (1st object) of the array
+        console.log(arr1[0].name) // accessing the key of the 1st object using dot notation
+        console.log(arr1[1]["name"]) // accessing the key of the 1st object using array notation
+        console.log(arr1[0].name="One") // Modification of key of an object in array
+        arr1[0].age=20 // adding new element to the 1st object
+        console.log(arr1[0]) // displaying the content of updated content
+    </script>
+</body>
+</html>

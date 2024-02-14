@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- The External file can be linked by any of the section like head,body,after the </html> tag -->
+</head>
+
+<body>
+    <!-- <script></script> of javascript must be included in the body section to avoid errors i.e. html tags must be loaded before the javascript code.
+        If we link the js code in script tag in the head section then it will leads to load the javascript at the time of execution
+    -->
+    <!-- javascript is mostly useful for linking the dynamic content to the website -->
+    <!-- javascript is the core component of the full stack development -->
+    <!-- they are 3 ways to declare the javascript files 1. Inline 2.Internal 3.External -->
+
+    <button onclick="alert('This is Inline javascript')">Click me</button> <br><br>
+
+    <button onclick="myfunc()">Click</button> <br><br>
+    <!-- Try to use the internal js in body section only not in head section to avoid errors when implementation -->
+    <script>
+        function myfunc(){
+            alert('This is Internal JS')
+        }
+    </script>
+
+<script src="Introduction.js"></script>
+
+    <button onclick="f1()"> External JS button</button>
+</body>
+</html>

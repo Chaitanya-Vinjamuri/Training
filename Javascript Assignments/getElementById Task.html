@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <script>
+        function Myfunction(){
+            document.getElementById("w1").innerHTML="This is content changed by the functions";
+        }
+    </script>
+</head>
+<body>
+    <p id="demo">hello</p>
+    <h1 id="intro">This is content before clicking a button</h1> <br>
+    <span id="w1">text</span><br> <br>
+    <button onclick="document.getElementById('intro').innerHTML='this is updated text'">Click Here!</button> <br><br>
+    <script>
+        document.getElementById("demo").innerHTML="this is javascript";   
+    </script>
+
+    <button onclick="Myfunction()">click to see dynamic content</button>
+
+    
+</body>
+</html>

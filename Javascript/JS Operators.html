@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Operators</title>
+</head>
+<body>
+    <!-- 1.Arithmetic Operators :--
+        These in Javavscript allows you to perform mathematical calculation on numerical values
+        like addition(+),subtraction(-),multiplication(*),division(/),modulus(%) and Increment(++) and Decrement(--)
+
+        Example for Increment(++) and Decrement(--)
+            let count = 5;
+            count++; Increment by 1 , count is now 6
+            count--; Decrement by 1 , count is now 5
+
+    2.Comparision Operators :--
+        These are used to compare the values and return boolean values[true(0) or false(1)]
+
+        Equal(==): checks if 2 values are equal,but it doesn't consider the datatype
+        Not Equal(!==): checks if 2 values are not equal,with type coercion
+        Strict Equal(===): checks if 2 values are equal,have  the same datatype
+        Not Equal(!===): checks if 2 values are not equal or have different datatypes
+        Less Than(<): checks if the leftvalue is less than the right value
+        Greater Than(>): checks if the leftvalue is  greater than the right value
+        Less than or Equal to (<=): It  checks if the leftvalue is less than or equal to the right value
+        Greater than or Equal to (>=): It  checks if the leftvalue is grater than or equal to the right value
+    3.Logical Operators :--
+        these are used to combine or manipulate the boolean values.They allow you to make more complex decisions
+        by evaluating multiple conditions
+        They are 1. logical AND(&&):-
+                    It returns true when both the conditions are true
+                2.Logical OR(||):--
+                    It returns true when one condition is true
+                3. Logical NOT(!):--
+                    It changes the boolean value i.e. if it returns 1(false) then it changes to 0(true)
+    -->
+
+    <script>
+        let a=5;
+        let b=2;
+
+        //Arithmetic Operators
+        console.log(a+b)
+        console.log(a-b)
+        console.log(a*b)
+        console.log(a/b)
+        console.log(a%b)
+        
+        let count=5;
+        count++ // increments by 1
+        console.log(count)
+        count-- // decrements by 1
+        console.log(count)
+
+        //comparision operators
+        console.log(a>b)
+        console.log(a<b)
+        console.log(a>=b)
+        console.log(a<=b)
+        console.log(a==b)
+        console.log(a!=b)
+        console.log(a===b)
+        console.log(a!==b)
+    
+        //logical operations
+        console.log((a>b)&&(a>=b))
+        console.log((a<b)||(a>b))
+        console.log(!(a>=b))
+    </script>
+</body>
+</html>
