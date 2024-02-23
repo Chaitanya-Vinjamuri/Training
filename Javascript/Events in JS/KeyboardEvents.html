@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- this keyword is used to get the information of the field when a event is performed -->
+    <!-- this.value is used to get the value entered in the htmlfield -->
+    <!-- when you called function then the 1st argument represents the event i.e. it stores the event triggering information -->
+    <!-- argument.key which always return the values you have entered -->
+
+
+    
+    <p id="p_id"></p>
+    <label>Keydown</label>
+    <input type="text" onkeydown="getbg(this.value)"> <br><br>
+    <label>Keyup</label>
+    <input type="text" onkeyup="getbg(this.value)"> <br><br>
+    <label>KeyPress</label>
+    <input type="text" onkeypress="getbg(this.value)"> <br><br>
+    <script>
+        
+        function getbg(value){
+            document.getElementById("p_id").innerText=value
+        }
+    </script>
+</body>
+</html>

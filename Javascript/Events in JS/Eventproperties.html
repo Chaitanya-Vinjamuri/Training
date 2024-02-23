@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <button id="btn">Click</button> <br><br><br>
+    <button id="btn2">Click</button>
+    <!-- using event properties in js -->
+    <script>
+        let btn1=document.getElementById('btn')
+        // 1. normal function calling
+        btn1.onclick=change
+        function change(){
+            document.body.style.backgroundColor="lightblue"
+        }
+
+        // 2. anonymous function calling
+        btn1.onmouseover=function(){
+            document.body.style.backgroundColor="orange"
+        }
+        btn1.onmouseout=function(){
+            document.body.style.backgroundColor="lightgreen"
+        }
+
+        // 3. function calling through EventListener
+        let btn2=document.getElementById('btn2')
+        let p2=document.getElementById("p1")
+        btn2.addEventListener("click",change1)
+        function change1(){
+            document.body.style.backgroundColor="red"
+        }
+        btn2.addEventListener("dblclick",function(){
+            p1.innerText="you double clicked the button"
+            p1.style.color="white"
+            p1.style.fontSize="20px"
+        })
+    </script>
+</body>
+</html>

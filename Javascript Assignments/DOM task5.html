@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM task5</title>
+</head>
+<body>
+    <p id="hi1"></p>
+    <script>
+        let bdy=document.body
+        let button=document.createElement("button")
+        bdy.appendChild(button)
+        button.setAttribute("id","btn1")
+        button.innerText="Increment"
+
+        let button1=document.createElement("button")
+        bdy.appendChild(button1)
+        button1.setAttribute("id","btn2")
+        button1.innerText="Decrement"
+        let x=0
+        document.getElementById("hi1").innerHTML=x
+        let a=document.getElementById("btn1")
+        a.addEventListener("click",myFun1)
+        let b=document.getElementById("btn2")
+        b.addEventListener("click",myFun2)
+
+        function myFun1(){
+            document.getElementById("hi1").innerHTML=x++
+        }
+
+        function myFun2(){
+            document.getElementById("hi1").innerHTML=x--
+        }
+    </script>
+</body>
+</html>

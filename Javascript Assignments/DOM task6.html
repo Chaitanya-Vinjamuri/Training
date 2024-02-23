@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM task</title>
+</head>
+<body>
+    <table border="" id="tbl">
+        <tr>
+            <th>Course Name</th>
+            <th>Course Number</th>
+            <th>Course Fees</th>
+            <th>Place</th>
+        </tr>
+        <tbody id="tbdy1"></tbody>
+        
+    </table>
+    <script>
+        let arr1=[
+            {
+                Name:"HTML",
+                Number:1,
+                Fees:500,
+                Place:"rjy"
+            },
+            {
+                Name:"CSS",
+                Number:2,
+                Fees:400,
+                Place:"kkd"
+            },
+            {
+                Name:"JS",
+                Number:3,
+                Fees:1000,
+                Place:"thub"
+            }
+        ]
+        for(let i=0;i<arr1.length;i++){
+            let tr1=document.createElement("tr")
+            let td1=document.createElement("td")
+            let td2=document.createElement("td")
+            let td3=document.createElement("td")
+            let td4=document.createElement("td")
+            td1=arr1[i].Name
+            td2=arr1[i].Number    
+            td3=arr1[i].Fees
+            td4=arr1[i].Place
+            tr1.appendChild("td1")
+            tr1.appendChild("td2")
+            tr1.appendChild("td3")
+            tr1.appendChild("td4")
+            let tbody1=document.getElementById("tbdy1")
+            document.getElementById("tbody1").innerHTML=tr1
+        }
+    </script>
+</body>
+</html>

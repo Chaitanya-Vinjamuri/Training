@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM (Document object model)</title>
+</head>
+<body>
+    <h1>Document Object Model</h1>
+
+    <h2 id="capt1">This is a DOM</h2>
+
+    <p class="capt2">This is Class 1</p>
+    <p class="capt2">This is Class 2</p>
+
+    <h1>hii</h1>
+    <h1>Hello Guys!</h1>
+
+    <a id="myanch">click</a>
+
+    <h3>This is querySelector</h3>
+    <h3>It only applies for above sentence only</h3>
+
+    <h4>this is JS</h2>
+    <h4>Javascript</h2>
+
+    <span>querySelector ALL</span>
+    <span>This is 5th Method</span>
+    <span>For accessing the content</span>
+
+    <p class="capt3">This is Class 3</p>
+    <p class="capt3">This is Class 4</p>
+
+    <h2 id="capt4">This is a DOM</h2>
+    <h2 id="capt4">This is a DOM</h2>
+
+    <p id="k">This is a  practice 1</p>
+    <p class="k">This is a practice 2</p>
+    <h5>practice 3</h5>
+    <span id="btn_txt"></span>
+    <script>
+        //They are 5 Method to access the content through Javascript
+
+        //to access the html content in the console 
+        console.log(document)
+        console.log(document.head)
+        console.log(document.body)
+
+        //Id is always be unique. Id's can't be same for 2 elements
+        //getElementById Method
+        var  r1=document.getElementById("capt1")
+        r1.style.fontSize="25px"
+        r1.innerHTML="This is content changed of ID" //innerHTML or innerText are used to change the content of the element
+
+        //getElementsByClassName Method
+        const r2=document.getElementsByClassName("capt2")
+        r2[0].style.color="blue"
+        r2[1].style.fontSize="40px"
+
+        //getElementsByTagName Method
+        var r3=document.getElementsByTagName("h1")
+        r3[1].style.backgroundColor="blue" //if they are 2 words then 1st word starting letter should be "small" and 2nd word starting letter should be "capital"
+        r3[1].style.color="white"
+
+        // Query Selector Method
+        document.querySelector('h4').style.backgroundColor="violet" //these styles are applicable for 1st one of the <h4> tag 
+        var r4=document.querySelector("h3")  // the variable initialization is not a mandatory for query selectors
+        r4.style.backgroundColor="purple"
+        r4.style.fontSize="70px"
+        r4.style.color="white"
+        
+        // Query Selector All Method
+        // we can declare the #id,.class,element in this querySelectorAll Method
+
+        //by using id
+        let head=document.querySelectorAll("#capt4") //all are selected but we can't apply the common styles to all at a time 
+        console.log(head)
+        head[0].style.fontSize="60px"
+
+        //by using class   
+        let head1=document.querySelectorAll(".capt3")
+        head1[0].style.backgroundColor="aqua"
+
+        //by using tag name
+        let head2=document.querySelectorAll("span")
+        head2[0].style.backgroundColor="pink"
+
+        // by using all i.e class,id,element in querySelectorAll Method
+        let all=document.querySelectorAll("#k,.k,h5")
+        console.log(all)
+        for(i=0;i<all.length;i++) {
+            all[i].style.color="red"
+            all[i].style.fontSize="50px"
+            all[i].style.fontFamily="verdana"
+        }
+
+
+        //setAttribute Method
+        //It is mostly useful to add additional attributes to the tag without declaring in the tag declaration
+        const Myanch=document.getElementById("myanch")
+        Myanch.setAttribute("href","https://youtube.com")
+        Myanch.setAttribute("target","_blank")
+
+        //creating an element
+        const newDiv=document.createElement("div")
+        const bdy=document.body //creating a variable for body of the document
+        newDiv.innerHTML="<h1>This is new Division</h1>"
+        newDiv.style.cssText=`background-color:lightblue;
+                            width:300px;
+                            height:300px;
+                            border-radius:10px;
+                            border:2px solid red` //  `` is used to insert styles for the text.It will be available on above tab button in your keyboard
+        bdy.appendChild(newDiv) // after creating the element we must append(add) to the body of the document
+
+        //creating a button
+        const btn=document.createElement("button")
+        btn.setAttribute("id","myBtn") //setting up an id with name "myBtn" attribute
+        btn.innerText="Click here!"
+        bdy.appendChild(btn)
+
+        // Event Listeners in Javascript
+        // Event listeners are used to perform a operation when a action is triggered
+        const btn1=document.getElementById("myBtn")
+        btn1.addEventListener("mouseover",Myfunc1)
+        btn1.addEventListener("click",Myfunc2)
+        btn1.addEventListener("mouseout",Myfunc3)
+
+        function Myfunc1(){
+            bdy.style.backgroundColor="lightcyan"
+        }
+        function Myfunc2(){
+            const a=document.getElementById("btn_txt");
+            const d=new Date();
+            a.innerHTML=Date()
+        }
+        function Myfunc3(){
+            bdy.style.backgroundColor="orange"
+        }
+    </script>
+</body>
+</html>

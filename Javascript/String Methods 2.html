@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <h1>String Methods in JS</h1>
+    <hr>
+    <table border="1">
+        <tr>
+            <td>d</td>
+            <td>r</td>
+            <td>i</td>
+            <td>v</td>
+            <td>e</td>
+            <td>&nbsp;</td>
+            <td>r</td>
+            <td>e</td>
+            <td>a</td>
+            <td>d</td>
+            <td>y</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>-11</td>
+            <td>-10</td>
+            <td>-9</td>
+            <td>-8</td>
+            <td>-7</td>
+            <td>-6</td>
+            <td>-5</td>
+            <td>-4</td>
+            <td>-3</td>
+            <td>-2</td>
+            <td>-1</td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        function StrMethods(str_name){
+            document.write('<b>'+str_name+'</b><br>');
+        }
+
+        let str = 'drive ready batch';
+        //let str = new String('drive ready');
+        
+        //original value
+        StrMethods('Original String = '+str);
+
+        //to find out the length of string
+        StrMethods('String length = '+str.length);
+
+        //to find out the value in the particular position by using index
+        StrMethods('Char At  = '+str.charAt(10));//y
+
+        //to find the index of particular value in string
+        StrMethods('Index of  = '+str.indexOf('y'));//4
+
+        StrMethods('Index of - 2ndway  = '+str.indexOf('ready'));//6
+
+        StrMethods('Last Index of  = '+str.lastIndexOf('e')); //6
+
+
+        let str1 = 'DRIVE READY';
+        //to convert into lowercase
+        StrMethods('Lowercase of string = '+str1.toLowerCase());
+        //to convert into uppercase
+        StrMethods('uppercase of string = '+str.toUpperCase());
+
+        //to add multiple strings
+        let str2 = ' mern batch';
+        let str3 = ' new batch';
+        StrMethods('concatenation of string = '+str.concat(str2));
+        StrMethods('concatenation of string 2 = '+str.concat(str2, str3));
+
+        // removing the spaces
+        StrMethods('trim of string = '+str.trim()) 
+        
+        //converting string into an array
+        console.log(str.split(""));
+        let newstr = 'uday&kiran&kumar';
+        console.log(newstr.split("&"));
+
+        let newstr1 = 'uday,kiran,raju';
+        console.log(newstr1.split(","));
+
+
+        // returns boolean value
+        StrMethods('startswith of string = '+str.startsWith('d'));// returns boolean value
+        StrMethods('endswith of string = '+str.endsWith('y'));
+
+        // returns boolean value
+        //slice method
+        //StrMethods('slice of string = '+str.slice(startpos,endpos-1));
+        //it is allows postive and negative index values
+        StrMethods('slice of string = '+str.slice(6,10));
+        StrMethods('slice of string = '+str.slice(-2)); //ch
+        StrMethods('slice of string = '+str.slice(-5)); //batch
+        StrMethods('slice of string = '+str.slice(-4,-2)); //ea
+        
+        //substring method
+        // it is allowing the positive indexes
+        StrMethods('substring of string = '+str.substring(4,2));
+        
+        //substr method
+        StrMethods('substr of string = '+str.substr(1,7));
+        
+        //includes method
+        StrMethods('includes of string = '+str.includes('drive'));
+        
+        // if(str.includes('batch') == true){
+            
+            // }else{
+                
+                // }
+                // it returns boolean
+                
+                
+                //repeat method --
+                StrMethods('repeat of string = '+str.repeat(3));
+                
+                //replace method --
+                StrMethods('replace of string = '+str.replace('batch','course'));
+                
+                
+    </script>
+            
+            
+        </body>
+        </html>

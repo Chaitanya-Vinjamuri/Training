@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK</title>
+</head>
+<body>
+    <p id="hi"></p>
+    <label for="">Enter Name:</label>
+    <input type="text" id="txt" onkeyup="dp()">
+    <p id="hi1"></p>
+    <script>
+        function dp(){
+        let n1=document.getElementById("txt").value;
+        let n3=document.getElementById("hi")
+        let n2=document.getElementById("hi1")
+        n2.innerText="Entered characters are :"+n1.length
+        
+        for(let i=0;i<=n1.length;i++){
+            if(n1.length<=3)
+            {
+                n3.innerText="Less than 3"
+                n3.style.color="red"
+                
+            }
+            else{
+                n3.innerText="Greater than 3"
+                n3.style.color="green"
+                }
+            }   
+        }
+    </script>
+</body>
+</html>

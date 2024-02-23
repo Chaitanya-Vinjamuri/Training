@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Enter color to change the background:</h3>
+    <input type="text" name="" id="color_id" onkeyup="getcolor()">
+    <input type="text" name="" id="color_id" onkeyup="getcolor1(this.value)"> <!--  this.value will returns the text which is entered in the input box -->
+    <script>
+
+        // 1st procedure
+        function getcolor(){
+            let clr=document.getElementById("color_id").value; // value also returns which is entered in the input box
+            document.body.style.backgroundColor=clr
+        }
+
+        // this.value will works in html content to access the value
+        // value will works in js script code to access value of the field
+        // both properties are same but used in different
+
+        // 2nd procedure
+        function getcolor1(val){
+            document.body.style.backgroundColor=val
+        }
+    </script>
+</body>
+</html>

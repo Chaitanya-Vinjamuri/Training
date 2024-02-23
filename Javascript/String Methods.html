@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <h1>String Methods in JS</h1>
+    <hr>
+    <table border="1">
+        <tr>
+            <td>d</td>
+            <td>r</td>
+            <td>i</td>
+            <td>v</td>
+            <td>e</td>
+            <td>-</td>
+            <td>r</td>
+            <td>e</td>
+            <td>a</td>
+            <td>d</td>
+            <td>y</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>-11</td>
+            <td>-10</td>
+            <td>-9</td>
+            <td>-8</td>
+            <td>-7</td>
+            <td>-6</td>
+            <td>-5</td>
+            <td>-4</td>
+            <td>-3</td>
+            <td>-2</td>
+            <td>-1</td>
+        </tr>
+    </table> <br>
+    <script>
+
+        function strMethods(str_name){
+            document.write('<b>'+str_name+'</b></br>')
+        }
+        
+        let str1='Technical Hub'
+        let str2='Industrial training'
+        let str3='2023-2024 batch'
+        // let str=new String('drive ready') used for dynamic allocation
+
+        //Original value
+        strMethods('Original String ='+str1);
+
+        // To find the length of a string
+        strMethods('String Length = '+str2.length); //it counts the empty spaces also
+
+        //to find the character in particulat position using index
+        strMethods('String at the specific index is: '+str1.charAt(2)) //charAt method is used
+
+        //to find the value in particular character using index
+        strMethods('index at the specific character is: '+str1.indexOf('c')) //indexOf method is used
+
+        //to find the last index of a specified element if the element is repeated in the string
+        strMethods('the last index of a is' +str2.lastIndexOf("a")) //index always starts with 0
+
+        //to convert into lowercase
+        strMethods('Lowercase of the string='+str1.toLowerCase());
+
+        //to convert into Uppercase
+        strMethods('Uppercase of the string='+str1.toUpperCase());
+
+        //to add multiple srings (concatination of strings)
+        strMethods('concatenation of 2 strings ='+str1.concat(str2))
+        strMethods('concatenation of 3 strings ='+str1.concat(str2,str3))
+
+        //removing the spaces at starting & ending of the string
+        let str4='  thub'
+        strMethods(str4)
+        strMethods("triming of a string: "+str4.trim())
+
+        //converting string into array
+        let str="drive-ready"
+        console.log(str1.split("")); // it will split the string into array elements
+        console.log(str1.split(" "));
+        console.log(str.split("-")) // it will split the string when it found the "-" in the string
+        let newstr="uday,raju,ramu"
+        console.log(newstr.split(","))
+
+        //return boolean values
+        strMethods('Starts with of string= '+str.startsWith('d'))
+        strMethods('Ends with of string= '+str.endsWith('y'))
+
+
+       
+        //slice method
+        //StrMethods('slice of string = '+str.slice(startpos,endpos-1));
+        //it is allows postive and negative index values
+        strMethods('slice of string = '+str1.slice(6,10)); //last value is not considered
+        strMethods('slice of string = '+str1.slice(-6)); //if it is negative index then the elements are printed from the index value(-6) to end of the string(-1)
+        strMethods('slice of string = '+str1.slice(-5)); 
+        strMethods('slice of string = '+str1.slice(-8,-2)); //last value is not considered
+
+        //substr method will prints the all values from starting index to ending index
+        //substring method will prints from the starting index and ending index-1
+        
+        //substring method
+        // it is allowing the positive indexes
+        strMethods('substring of string = '+str1.substring(4,1)); 
+        strMethods('substring of string = '+str1.substring(1,4)); // if the indexes are reversed then output doesn't changes to reverse order it will continue in positive index only
+        
+        //substr method
+        strMethods('substr of string = '+str1.substr(1,7));
+        
+        //includes method returns boolean values
+        strMethods('Is the word included in the string: '+str1.includes('drive')); //it checks that value is present in the string or not
+        strMethods("Is the word included in the string: "+str1.includes('Hub')) //here the hub is present in Technical Hub String
+        
+        //example of includes
+
+        // if(str.includes('batch') == true){
+                //stmts
+        // }else{
+                //stmts
+        // }
+                
+                
+                
+        //repeat method --
+        strMethods('repeat of string = '+str.repeat(3));//it repeats the word by 3 iterations
+                
+        //replace method --
+        strMethods('replace of string = '+str2.replace('Training','Hub'));
+                
+
+      
+    </script>
+</body>
+</html>

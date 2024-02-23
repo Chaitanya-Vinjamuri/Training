@@ -1,0 +1,43 @@
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <!-- they are 3 main form events such as submit(),reset(),change() -->
+             <!-- these are available in input field of html but in html we have these events to make dynamic changes -->
+
+            <form id="my">
+                <label>Enter name</label>
+                <input type="text" id="fn" name="fname" onchange="changename()">
+                <label>select college</label>
+                <select style="width:300px;height:30px" onchange="change(this.value)">
+        
+                    <option>select college</option>
+                    <option value="AEC">AEC</option>
+                    <option value="ACET">ACET</option>
+                    <option value="ACOE">ACOE</option>
+                    </select>
+                    <p id="p_id"> </p>
+                        <input type="button" onclick="submitform()" value="submit">
+                        <input type="button" onclick="resetform()" value="reset">
+                   
+                </form>
+                <script>
+                function  submitform(){
+                    document.getElementById('my').submit()
+                }
+                function  resetform(){
+                    document.getElementById('my').reset()
+                }
+                function changename(){
+                const li= document.getElementById('fn');
+                fn.value=fn.value.toUppercase();
+            }
+            function change(clg){
+                document.getElementById ('p_id').innerText=clg;   
+            }
+            </script>
+        </body>
+        </html>

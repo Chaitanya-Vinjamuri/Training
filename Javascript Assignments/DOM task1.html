@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Task - 1</title>
+</head>
+<body>
+    <table id="myTable" border="">
+        
+      </table>
+    <script>
+         const bdy=document.body
+         const btn=document.createElement("button")
+         const image=document.createElement("img")
+         image.setAttribute("id","img1")
+         image.setAttribute("src","Pictures/thub logo 1.png")
+         btn.addEventListener("click",myFun)
+         btn.innerText="Click Me!"
+         bdy.appendChild(image)
+         bdy.appendChild(btn)
+         
+         function myFun(){
+            image.setAttribute("src","Pictures/whether.png")
+            image.style.backgroundSize="cover"
+         }
+         const p1=document.createElement("input")
+         p1.setAttribute("placeholder","Enter any number")
+         p1.setAttribute("id","id1")
+         p1.innerText="Enter any number for Ascending order:"
+         bdy.appendChild(p1)
+         const btn2=document.createElement("button")
+         btn2.innerText="Ascending order"
+         const MyTable=document.createElement("table")
+         btn2.addEventListener("click",myFun1)
+         bdy.appendChild(btn2)
+
+         function myFun1(){
+            const a=document.getElementById("id1").value
+            let i=1;
+            while(i<=a){
+                var table = document.getElementById("myTable");
+                var row=table.insertRow(0)
+                var cell1=row.insertCell(0)
+                cell1.innerText="Number:"+i
+                i++
+                
+            }
+         }
+    </script>
+</body>
+</html>

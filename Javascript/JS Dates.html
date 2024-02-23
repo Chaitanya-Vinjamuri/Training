@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates</title>
+</head>
+<body>
+    <script>
+        // date functions are mostly useful to perform a particular operation at a specified time
+        
+        const d= new Date();
+        document.write(d+"<br>")
+        document.write("Current Year is:"+d.getFullYear()+"<br>")
+        document.write("Current Month is:"+d.getMonth()+"<br>")
+        document.write("Current Day of week is:"+d.getDay()+"<br>")
+        document.write("Current Date is:"+d.getDate()+"<br>")
+        document.write("Current Hour is:"+d.getHours()+"<br>")
+        document.write("Current Minute is:"+d.getMinutes()+"<br>")
+        document.write("Current Second when refreshed is:"+d.getSeconds()+"<br>")
+        document.write("Current MilliSecond when refreshed is:"+d.getMilliseconds()+"<br>")
+        const weekday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+        let day=weekday[d.getDay()]; // to get the exact day we used this
+        document.write("Current day is:"+day) // there is no inbuild function which able to print the day
+        // so,used the getDay() function to get the day count of the week and then we used the weekday[] to get exact day
+    </script>
+</body>
+</html>

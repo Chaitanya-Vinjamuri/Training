@@ -7,11 +7,49 @@
     
     <title>Chaitanya Vinjamuri</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="../public_html/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="../public_html/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     
 	<link rel="stylesheet" href="assets/css/chaithu.css">
+<style>
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <!-- <a href="#" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a> -->
@@ -60,7 +98,7 @@
                         <a href="#portfolio" class="nav-link">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#blog" class="nav-link">Blog</a>
+                        <a href="#Certifications" class="nav-link">Certifications</a>
                     </li>
                     <li class="nav-item last-item">
                         <a href="#contact" class="nav-link">Contact</a>
@@ -630,71 +668,29 @@
     </section> -->
     <!-- End of portfolio section -->
 
-    <section class="section" id="blog">
+    <section class="section" id="Certifications">
         <div class="container">
-            <h2 class="mb-5">Latest <span class="text-danger">News</span></h2>
+            <h2 class="mb-5">My<span class="text-danger"> Certifications</span></h2>
             <div class="row">
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                <div class="col-md-4">
+                    <img src="../public_html/assets/imgs/Infosys certifiate.png" alt="" class="w-100 h-90 img-thumbnail img-fluid image">
+                    <div class="middle">
+                        <div class="text">John Doe</div>
                     </div>
-                    <div class="content-holder">
-                        <h6 class="title">Consectetur adipisicing elit</h6>
-
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                            <a href="#"><i class="ti-comment"></i> 123</a>
-                        </p>
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
-
-                        <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b></p>
-                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
-
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                    
+                </div>
+                <div class="col-md-4">
+                    <img src="../public_html/assets/imgs/JNTU Workshop.jpg" alt="" class="w-100 h-60 img-thumbnail img-fluid image">
+                    <div class="middle">
+                        <div class="text">John Doe</div>
                     </div>
-                </div><!-- end of blog wrapper -->
-
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Explicabo illo</h6>
-
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                            <a href="#"><i class="ti-comment"></i> 264</a>
-                        </p>
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
-
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h4 class="title">Porro Quisqua</h4>
-
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 431</a>
-                            <a href="#"><i class="ti-comment"></i> 312</a>
-                        </p>
-                        
-                        <p> consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
-
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-
+                </div>
+                <div class="col-md-4">
+                    <img src="../public_html/assets/imgs/Tcsion image.png" alt="" class="w-100 h-60 img-thumbnail img-fluid image">
+                    <div class="middle">
+                        <div class="text">John Doe</div>
+                    </div> 
+                </div>
             </div>
         </div>
     </section>

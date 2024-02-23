@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick</title>
+</head>
+<body>
+    <button onclick="sample()">Click Here</button> <br>
+    <button ondrag="sample1()">Click ME</button>
+    <br>
+    <b id="sp"></b>
+    <!-- this is inline events in js -->
+    <!-- 1st way to declare events -->
+    <script>
+        function sample(){
+            document.body.style.backgroundColor='orange'
+            document.getElementById("sp").innerText='You have clicked the button in this window'
+        }
+        function sample1(){
+            document.body.style.backgroundColor='orange'
+            document.getElementById("sp").innerText='You have selected the text and dragged the button in this window'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Events</title>
+</head>
+<body>
+    <!-- focus is the event which is used when the input field is focussed -->
+    <label for="">Focus</label>
+    <input type="text" onfocus="sample(this,'green')">
+    <!-- The actions are performed when blur effect is applied for a input field 
+        After entering the data in the input box then we move to next field then functions are triggered.
+        This indicates the operations are applied when the work on particular field is completed   -->
+    <label for="">Blur</label>
+    <input type="text" onblur="sample(this,'red')">
+    <script>
+        function sample(e,color_value){
+            e.style.backgroundColor=color_value
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            height: 150px;
+            width: 210px;
+            margin-top: 100px;
+        }
+        .di{
+            height: 50px;
+            width: 70px;
+            float: left;
+            outline: 2px solid;
+            text-align: center;
+            padding-top: 20%;
+        }
+    </style>
+    <script>
+        function myFunction() {
+   var collection = document.getElementsByClassName("di");
+   for (let i = 0; i < collection.length; i++) {
+   collection.item(i).innerHTML=i+1;
+   }
+   }
+  function reverse() {
+    var col=document.getElementsByClassName('di');
+    var j=0;
+    for(i=9;i>0;i=i-1)
+    {
+        col.item(j).innerHTML=i;
+        j=j+1;
+    }
+  } 
+    
+    </script>
+</head>
+<body>
+   <center>
+    <div class="a">
+    <div class="di"></div>
+    <div class="di"></div>
+    <div class="di"></div>
+    <div class="di"></div>
+    <div class="di"></div>
+    <div class="di"></div>
+    <div class="di"></div>
+    <div class="di"></div>
+    <div class="di"></div>
+</div>
+</center>
+<br>
+<button onclick="myFunction()">click</button>
+<button onclick="reverse()">reverse</button>
+
+</body>
+</html>
