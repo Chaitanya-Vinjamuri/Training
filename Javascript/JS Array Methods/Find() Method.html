@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Methods | find()</h1>
+    <h3>This method returns the value when condition is satisfied then exits from the loop</h3>
+    <p>It is used to find the data by using startsWith or endsWith attributes</p>
+    <p>find() method doesn't check all the values when the condition is satisfied</p>
+
+    <script>
+        //arrow function
+        let courses=['html','css','bootstrap','reactjs','mongodb']
+        let getcourse=courses.find((courses,index)=>{
+            return courses.endsWith('l')
+        })
+        console.log(getcourse)
+
+        //anonymous function
+        let courses2=['html','nodejs','sql','reactjs','mongodb'] 
+        let getcourse2=courses.find(function(courses2,index){
+            return courses2.endsWith('l') //In this case they are 2 words ends with "l" i.e. html and sql but it returns only html because condition is satisfied
+        })
+        console.log(getcourse2) 
+        
+        //named function
+        let platform=['hackerrank','leetcode','codechef','codemind']
+        function func(platform,index){
+            return platform.startsWith("h")
+        }
+        let getplatform=platform.find(func)
+        console.log(getplatform)
+    </script>
+</body>
+</html>

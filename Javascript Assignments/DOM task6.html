@@ -1,59 +1,84 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM task</title>
+    <title>Document</title>
 </head>
 <body>
-    <table border="" id="tbl">
+    <table border="500px" width="50%" align="center">
         <tr>
-            <th>Course Name</th>
-            <th>Course Number</th>
-            <th>Course Fees</th>
-            <th>Place</th>
+            <th>course name</th>
+            <th>course number</th>
+            <th>course fees</th>
+            <th>place</th>
         </tr>
-        <tbody id="tbdy1"></tbody>
-        
+        <tbody id="head"></tbody>
     </table>
     <script>
-        let arr1=[
-            {
-                Name:"HTML",
-                Number:1,
-                Fees:500,
-                Place:"rjy"
-            },
-            {
-                Name:"CSS",
-                Number:2,
-                Fees:400,
-                Place:"kkd"
-            },
-            {
-                Name:"JS",
-                Number:3,
-                Fees:1000,
-                Place:"thub"
-            }
-        ]
-        for(let i=0;i<arr1.length;i++){
-            let tr1=document.createElement("tr")
-            let td1=document.createElement("td")
-            let td2=document.createElement("td")
-            let td3=document.createElement("td")
-            let td4=document.createElement("td")
-            td1=arr1[i].Name
-            td2=arr1[i].Number    
-            td3=arr1[i].Fees
-            td4=arr1[i].Place
-            tr1.appendChild("td1")
-            tr1.appendChild("td2")
-            tr1.appendChild("td3")
-            tr1.appendChild("td4")
-            let tbody1=document.getElementById("tbdy1")
-            document.getElementById("tbody1").innerHTML=tr1
+        const obj=[{
+            name:'html',
+            number:24323,
+            fees:253,
+            place:'dwp'
+        },
+        {
+        name:'css',
+        number:12345,
+        fees:567,
+        place:'dwp'
+        },
+        {
+        name:'css',
+        number:57484,
+        fees:789,
+        place:'dwp'
+        },
+        {
+        name:'Bootstrap',
+        number:39847,
+        fees:321,
+        place:'dwp'
+        },
+        {
+        name:'javascript',
+        number:21376,
+        fees:236,
+        place:'dwp'
+        }];
+       var a='<tbody>' 
+        for(i=0;i<obj.length;i++){
+            a=a+='<tr>'
+            a=a+'<td>'+obj[i].name +'</td>'
+            a=a+'<td>'+obj[i].number +'</td>'
+            a=a+'<td>'+obj[i].fees +'</td>'
+            a=a+'<td>'+obj[i].place +'</td>'
+            a=a+'</tr>'
         }
+        a=a+'</tbody>';
+        document.getElementById('head').innerHTML=a;
+
+
+    // for(let i=0;i<obj.length;i++){
+    //     let tr1=document.createElement("tr")
+    //     let td1=document.createElement("td")
+    //     let td2=document.createElement("td")
+    //     let td3=document.createElement("td")
+    //     let td4=document.createElement("td")
+    //     td1=obj[i].Name
+    //     td2=obj[i].Number    
+    //     td3=obj[i].Fees
+    //     td4=obj[i].Place
+    //     bdy.appendChild("tr1")
+    //     tr1.appendChild("td1")
+    //     tr1.appendChild("td2")
+    //     tr1.appendChild("td3")
+    //     tr1.appendChild("td4")
+    //     let tbody1=document.getElementById("tbdy1")
+    //     document.getElementById("tbody1").innerHTML=tr1
+    // }
+
+       
     </script>
 </body>
 </html>
+

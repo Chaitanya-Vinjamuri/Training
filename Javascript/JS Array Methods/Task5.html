@@ -1,0 +1,23 @@
+<html>
+<body>
+  <input type="text" id="carBrandInput" placeholder="Enter the first letter ">
+  <button id="findButton">Find</button>
+  <p></p>
+
+
+  <script>
+    const carBrands = ["ali bat", "bhargav", "chandhu", "dharma", "ganesh"];
+
+    const findButton = document.getElementById("findButton");
+
+
+    findButton.addEventListener("click", () => {
+      const carBrandInput = document.getElementById("carBrandInput");
+      const p=document.querySelector("p")
+      const firstLetter = carBrandInput.value.toLowerCase();
+      p.innerText=carBrands.find(carBrands=>{return carBrands.startsWith(firstLetter)})
+
+    });
+  </script>
+</body>
+</html>

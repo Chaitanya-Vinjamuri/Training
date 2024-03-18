@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <center> <h1>Array Methods before ES6 in Javascript</h1></center>
+
+  <ul>
+    <li>push</li>
+    <li>pop</li>
+    <li>shift</li>
+    <li>unshift</li>
+    <li>concat</li>
+    <li>slice</li>
+    <li>splice</li>
+    <li>indexOf</li>
+    <li>sort</li>
+    
+  </ul>
+    <script>
+
+        var arr=['ajay','ravi','vasu','babai']
+        console.log(arr)
+        console.log(arr[3])
+        arr[3]='veerendra'
+        console.log(arr)
+        console.log(arr.length)
+
+
+        let trainee=['ravi','ramu','raja']
+        console.log(trainee)
+
+        trainee.push('deepti') //adding element at last
+        console.log(trainee)
+
+        trainee.pop() // deletes last element
+        console.log(trainee) 
+
+        trainee.shift() // deletes the  element at the starting position of array
+        console.log(trainee)
+
+        trainee.unshift("chaitanya")// add the  element at the starting position of array
+        console.log(trainee)
+
+        //concat is used to combine 2 or more arrays and returns a new array(
+        let v1=['apple','banana','guava']
+        let v2=['carrot','brinjal','tomato','potato']
+        let combined=v1.concat(v2) //concatination
+        console.log(combined)
+
+        //slice extracts a section of an array and returns it as new string
+        let arr1=['ramu','ajay','sindhu','keerthi','karthik','ahmed']
+        console.log(arr1.slice(1,5)) //last index is excluded because (n-1)format,index starts from 0
+
+        //splice is udes to replace multiple strings at a time
+        //1st value is starting index
+        //2nd index is count from the starting index
+        //3 & 4 values are new values will be replaced with the old strings
+        combined.splice(1,2,'kiwi','papaya')// new elements are replaced with old elements
+        console.log(combined)
+
+        // indexOf will returns the index of string
+        console.log(combined.indexOf("kiwi"))//displays the index
+
+        //sort() is used to sort the elements by Alphabetical order(a-z) format
+        console.log(combined.sort())
+    </script>
+
+</body>
+</html>

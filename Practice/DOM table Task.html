@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="id1" placeholder="Enter any Number:">
+    <button onclick="func1()">Submit</button> <br><br><br>
+    <h3>Output:</h3>
+    <table border="" height="150px" width="150px">
+        <caption>Table of Numbers</caption>
+        <tbody id="tbdy1"></tbody>
+    </table>
+    <script>
+        function func1(){
+            let a1=document.getElementById("id1").value
+            console.log(a1)
+            a='<tbody>'
+            for(let i=0;i<=a1;i++){
+                
+                a=a+'<tr>'
+                a=a+'<td>'+i+'</td>'
+                a=a+'</tr>'
+                
+            }
+            a+='</tbody>'
+            document.getElementById("tbdy1").innerHTML=a
+        }
+        
+    </script>
+</body>
+</html>

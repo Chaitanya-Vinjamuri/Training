@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //forEach is similar to map() but it updates the existing array while iterating
+        // forEach doesn't creates the new array
+
+        // arrow function
+        let salaries=[20000,35000,50000];
+        console.log(salaries)
+        salaries.forEach((amount,index)=>{
+            var hike=amount/10;
+            console.log(hike);
+            salaries[index]=amount+hike
+        })
+        console.log(salaries);
+
+        
+        //anonymous function
+        salaries2=[10000,23000,38000]
+        console.log(salaries2)
+        salaries2.forEach(function(amount,index){
+            var hike=amount/10;
+            console.log(hike);
+            salaries2[index]=amount+hike
+        })
+        console.log(salaries2);
+
+
+        //named function
+        salaries3=[12000,43000,55000]
+        console.log(salaries3)
+        salaries3.forEach(named_func) //function calling
+        function named_func(amount,index){
+            var hike=amount/10;
+            console.log(hike);
+            salaries3[index]=amount+hike
+        }  
+        console.log(salaries3);
+    </script>
+</body>
+</html>

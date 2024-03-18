@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            width: 800px;
+            height: 400px;
+            position: relative;
+            left: 350px;
+            top: 100px;
+            box-shadow: 0px 0px 30px black;
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <center><h3 style="padding: 50px;">Hello javascript!</h3>
+        <img src="Pictures/bulb off.jpeg" alt="" id="img1"><br><br><br>
+        
+        <button id="btn1">Bulb ON/OFF</button></center>
+    </div>
+    <script>
+        let a1=document.getElementById("img1")
+        let btn=document.getElementById("btn1")
+        let a=0
+        btn.addEventListener("click",()=>{
+            if(a==0){
+                a1.src=("Pictures/bulb on.jpeg")
+                a=1
+                btn.innerText="Bulb Off"
+            }
+            else{
+                a1.src=("Pictures/bulb off.jpeg")
+                a=0
+                btn.innerText="Bulb On"
+            }
+        })
+        
+    </script>
+</body>
+</html>

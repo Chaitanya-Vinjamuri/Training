@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="email" id="email1" placeholder="enter your mail Id">
+    <button onclick="func()">click</button>
+    <p id="r1"></p>
+    <script>
+        let emails=['abhi@gmail.com','rahul@gmail.com','keerthi@gmail.com','surya@gmail.com']
+        let result=document.getElementById("r1")
+        
+        function func(){
+            let val1=document.getElementById("email1").value
+            let verify=emails.some((emails)=>{
+                return emails===val1
+        })
+        if(verify==true){
+                result.innerText="user already exists!"
+                result.style.color="red"
+            }
+            else if(verify==false){
+                result.innerText="You can proceed"
+                result.style.color="darkgreen"
+            }
+        }
+        
+    </script>
+    
+    
+   
+</body>
+</html>

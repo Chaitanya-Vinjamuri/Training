@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[{
+            name:"Chaitanya",
+            Branch:"CSE",
+            PIN:65,
+            college:"AEC"        
+        },
+        {
+            name:"Akhil",
+            Branch:"AI & ML",
+            PIN:25,
+            college:"AEC"        
+        },
+        {
+            name:"ravi",
+            Branch:"IT",
+            PIN:43,
+            college:"AECT"
+        },
+        {
+            name:"sravya",
+            Branch:"ECE",
+            PIN:27,
+            college:"ACOE"
+        }]
+        let data=arr.filter((element,index)=>{
+            return element.college=="AEC"
+        })
+        document.write("<b>"+"Student Details:"+"</b><br>")
+        document.write(data[0].name+'<br>')
+        document.write(data[0].Branch+'<br>')
+        document.write(data[0].PIN+'<br>')
+        document.write(data[0].college+'<br>') 
+
+        document.write(data[1].name+'<br>')
+        document.write(data[1].Branch+'<br>')
+        document.write(data[1].PIN+'<br>')
+        document.write(data[1].college)
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            height: 400px;
+            width: 300px;
+            background-color:blue;
+            animation-name: sample;
+            animation-duration: 2s;
+        }
+        @keyframes sample {
+            from {
+                border-radius: 0px;
+
+            }
+            to{
+                border-radius: 200px;
+            }
+        }
+        h1{
+            animation-name: hello;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state:paused;
+            animation-play-state: running;
+            
+            
+        }
+        @keyframes hello {
+            from{
+                font-size: 5px ;
+            }
+            to{
+                font-size: 50px;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a"></div>
+    <h1>Hello</h1>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validations</title>
+</head>
+<body>
+    <form action="">
+        Firstname: <input type="text" id="id1"> &nbsp;
+        Lastname: <input type="text" id="id2"> <br><br>
+        Password: <input type="password" id="pass1"><br><br>
+        Confirm Password: <input type="password" id="pass2"> <br>
+        <button onclick="play()">Click</button>
+
+    </form>
+    <script>
+        function play(){
+            let a1=document.getElementById("id1").value
+            let a2=document.getElementById("id2").value
+            let a3=document.getElementById("pass1").value
+            let a4=document.getElementById("pass2").value
+            if(a1.length==0 && a2.length==0){
+                alert("Enter any Value")
+            }
+            else if(a3.length<8 && a4.length<8){
+                alert("Your password is less than 8 Characters")
+            }
+            else{
+                if(a3=a4){
+                    alert("Your password is matched")
+                }
+                else{
+                    alert("Your password is mismatched")
+                }
+            }
+            
+        }
+    </script>
+</body>
+</html>

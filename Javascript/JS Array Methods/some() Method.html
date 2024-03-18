@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Methods | some()</h1>
+    <p>This method returns the boolean value when condition is satisfied then exit from the iteration loop</p>
+
+    <script>
+        //arrow function
+        let emails=['venky@gmail.com','pradeep@gmail.com','vishnu@gmail.com','ravi@gmail.com']
+        let email_verification=emails.some((arr,i,index)=>{
+            return arr=='venky@gmail.com' // it returns true because the given email is present in the array(condition satisfied)
+        })
+        console.log(email_verification)
+
+        //anonymous function
+        let emails3=['venky@gmail.com','pradeep@gmail.com','vishnu@gmail.com','ravi@gmail.com']
+        let email_verification3=emails.some(function(arr,i,index){
+            return arr=='venky@gmail.com'
+        })
+        console.log(email_verification3)
+
+        //named function
+        let emails2=['vaishnavi@gmail.com','manipradeep@gmail.com','vishwa@gmail.com','raju@gmail.com']
+        function func(array,i,index){
+            return array=='venky@gmail.com' //it returns false because the condition is not satisfied
+        }
+        let email_verification2=emails2.some(func) 
+        console.log(email_verification2)
+    </script>
+</body>
+</html>

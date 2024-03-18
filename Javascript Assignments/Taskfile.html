@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <h1>String Methods</h1>
+    <script>
+        function strMethods(str_name){
+            document.write('<b>'+str_name+'</b></br>')
+        }
+
+        let str1="Technical Hub"
+        strMethods('Original String ='+str1);
+        strMethods('substr ='+str1.substr(1,6));
+        strMethods('substring ='+str1.substring(1,6));
+        let str2 = str1. replace("Hub", "Training"); 
+        strMethods("Replaced a word in a  String:"+str2)
+        let text = "Mr.Blue has a blue house"
+        strMethods("Text: "+text)
+        let position = text.search("Blue");
+        strMethods("The position of the first match of Blue is: "+position)
+        let text2 = "Hello World!";
+        let result = text2.toLocaleLowerCase();
+        strMethods("lowercase of the text : "+result)
+        let result2 = text2.toLocaleUpperCase();
+        strMethods("Uppercase of the text : "+result2)
+        strMethods('index at the specific character "o" in "Hello World!" is: '+text2.indexOf('o'))
+        let str3="Golden Day"
+        let str4="Trainer"
+        strMethods('Is the word "Day" included in the string "Golden Day": '+str3.includes('Day'))
+        strMethods('slice of string "Golden Day" = '+str3.slice(1,6)); 
+        strMethods('concatenation of 2 strings ='+str1.concat(str3))
+        strMethods('the last index of r in Trainer is : ' +str4.lastIndexOf("r"))
+        let str5 = "THIS WORLD";
+        let code = str5.charCodeAt(0);
+        strMethods("Get the Unicode of the first character in 'THIS WORLD' : "+code)
+        strMethods("triming of a string: "+str5.trim())
+        strMethods('String at the specific index is: '+str5.charAt(2))
+        strMethods('index at the specific character is: '+str5.valueOf())
+        let text3 = "How are you doing today?";
+        const myArray = text3.split(" ");
+        strMethods(myArray)
+        let t1=3
+        let res=t1.toString()
+        strMethods("Data taken in number datatype and changed to string datatype : "+res)
+        strMethods("Updated datatype of 3 : "+typeof(res))
+        let t2 = "The rain in spain stays mainly in the plain";
+        let result3 = t2.match("mainly");
+        strMethods("The text 'mainly' matched in the sentence 'The rain in spain stays mainly in the plain': " +result3)
+    </script>
+</body>
+</html>

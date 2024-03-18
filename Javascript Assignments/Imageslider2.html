@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .a{
+        height: 500px;
+        width: 800px;
+        background-color: whitesmoke;
+        border-radius: 5px;
+
+    }
+    .dot{
+        width: 20px;
+        height: 20px;
+        background-color: lightgray;
+        border-radius: 90px;
+        display: inline-block;
+    }
+    .active{
+        background-color: dimgray;
+    }
+</style>
+<body>
+   <center>
+    <div class="a">
+        <div class="pics">
+            <img src="../CSS Assignments/pictures/pic2.jpg" alt="img" width="40%" style="position: relative; top:100px">
+        </div>
+        <div class="pics">
+            <img src="../Bootstrap Assignments/pictures/pict5.jpg" alt="img" width="60%" style="position: relative; top:100px">
+        </div>
+        <div class="pics">
+            <img src="../CSS Assignments/pictures/playing cards.jpg" alt="img" width="60%" style="position: relative; top:100px">
+        </div>
+    </div>
+    
+   </center>
+   <br>
+    <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+   <script>
+    let imgIndex = 0;
+    autoslides();
+    function autoslides() {
+      let i;
+      let imgs = document.getElementsByClassName("pics");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < imgs.length; i++) {
+        imgs[i].style.display = "none";  
+      }
+      imgIndex++;
+      if (imgIndex > imgs.length)
+       {imgIndex = 1}    
+      for (i = 0; i < dots.length; i++)
+       {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      imgs[imgIndex-1].style.display = "block";  
+      dots[imgIndex-1].className += " active";
+      setTimeout(autoslides, 1500); 
+    }
+    </script>
+</body>
+</html>

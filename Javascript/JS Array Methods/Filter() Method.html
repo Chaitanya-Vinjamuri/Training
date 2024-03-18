@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //arrow function
+        let numbers=[4,5,3,8,2,10,23]
+        let even_nums=numbers.filter((element,i)=>{
+            return element%2==0
+        })
+        console.log(even_nums)
+        let odd_nums=numbers.filter((element,i)=>{
+            return element%2!=0
+        })
+        console.log(odd_nums)
+
+        //anonymous function
+        let numbers1=[4,5,7,92,21,10,53]
+        let even_nums1=numbers1.filter(function(element,i){
+            return element%2==0
+        })
+        console.log(even_nums1)
+        let odd_nums1=numbers1.filter(function(element,i){
+            return element%2!=0
+        })
+        console.log(odd_nums1)
+
+
+        //named function
+        let numbers2=[4,5,7,49,22,15,53]
+        let v1=numbers2.filter(even_nums2)
+        function even_nums2(element,i){
+            return element%2==0
+        }
+        console.log(v1)
+        let v2=numbers2.filter(odd_nums2)
+        function odd_nums2(element,i){
+            return element%2!=0
+        }
+        console.log(v2)
+    </script>
+</body>
+</html>

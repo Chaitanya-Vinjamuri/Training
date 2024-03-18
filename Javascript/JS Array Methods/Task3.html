@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="id1" placeholder="Enter a name:">
+    <button onclick="fun()">click</button>
+    <p id="p1"></p>
+    <script>
+        let arr=['ravi','bhadra','ajay','sowmya']
+        function fun(){
+            const inputname=document.getElementById("id1").value
+            const result=document.getElementById("p1")
+
+            const foundname=arr.find(names=>names.toLowerCase()=== inputname.toLowerCase());
+            // const foundname=arr.find((names)=>{
+            //     names.toLowerCase()=== name.toLowerCase();
+            // })
+            if(foundname){
+                result.textContent="Name found!"
+            }
+            else{
+                result.textContent="Name not found"
+            }
+
+            // function func(name,index){
+            // return name.startsWith("r")
+            // }
+            // let result=arr.find(func)
+            // document.getElementById("p1").innerText=result
+        }
+    </script>
+</body>
+</html>

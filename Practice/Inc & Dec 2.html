@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="inp1">
+    <button onclick="func1()">Increment</button>
+    <button onclick="func2()">Decrement</button>
+    <p id="p1"></p>
+    <script>
+        function func1(){
+            let a=document.getElementById("inp1").value
+            let count=a++
+            console.log(count)
+            document.getElementById("p1").innerHTML=count
+
+        }
+    </script>
+</body>
+</html>

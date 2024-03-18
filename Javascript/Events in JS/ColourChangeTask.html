@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colour Change</title>
+    <title>Document</title>
 </head>
 <body>
-    
-    <button onclick="sample()">Change Background</button>
     <script>
-        function sample(){
-            var randomColor = Math.floor(Math.random()*16777215).toString(16);
-            document.body.style.backgroundColor="#"+randomColor
+        let bdy=document.body
+        let btn=document.createElement("button")
+        btn.innerText="Change Background"
+        btn.addEventListener("click",color)
+        bdy.appendChild(btn)
+        function color(){
+            let x=Math.floor(Math.random()*256)
+            let y=Math.floor(Math.random()*256)
+            let z=Math.floor(Math.random()*256)
+            let rgb=`rgb(${x},${y},${z})`
+            console.log(rgb)
+            document.body.style.backgroundColor=rgb
         }
     </script>
 </body>

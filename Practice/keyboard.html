@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <input type="text" id="id1" placeholder="Enter any text:" >
+   
+    <script>
+        let v1=document.getElementById("id1")
+        v1.addEventListener("keydown",func)
+        function func(){
+            let v2=document.getElementById("id1").value
+            document.getElementById("p1").innerText=v2
+        }
+    </script>
+</body>
+</html>

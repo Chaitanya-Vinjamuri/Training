@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let bdy=document.body
+
+        let btn=document.createElement("button")
+        btn.setAttribute("id","btnid")
+        btn.innerText="Increment"
+        btn.addEventListener("click",func1)
+
+        
+        let btn2=document.createElement("button")
+        btn2.setAttribute("id","btnid2")
+        btn2.innerText="Decrement"
+        btn2.addEventListener("click",func2)
+
+        let p1=document.createElement("p")
+        p1.setAttribute("id","para")
+
+        bdy.appendChild(btn)
+        bdy.appendChild(btn2)
+        bdy.appendChild(p1)
+
+
+        let x=0
+        document.getElementById("para").innerText=x
+        function func1(){
+            document.getElementById("para").innerHTML=x++ 
+        }
+        function func2(){
+            document.getElementById("para").innerHTML=x-- 
+        }
+    </script>
+</body>
+</html>
+

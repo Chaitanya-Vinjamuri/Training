@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <button id="btn1" onclick="getname('Chaitanya')">Click Me</button> <br><br><br><br>
+    <label for="">Enter your name:</label>
+    <input type="text" id="text_id">
+    <button onclick="inputfield()">Click</button>
+    <script>
+        // function with no parameters
+        func()
+        function func(){
+            alert("Functions with no Parameters")
+        }
+
+        
+
+        // let bdy=document.body
+        // let q1=document.createElement("button")
+        // q1.innerText="Click Me"
+        // q1.setAttribute("id","btn1")
+        // bdy.appendChild(q1)
+        // let btn2=document.getElementById("btn1")
+        // btn2.addEventListener("click",getname("chait"))
+
+
+
+        // function with 1 paramenter
+        function getname(name){
+            document.getElementById("p1").innerText=name+" is Trainee at Technical Hub"
+            document.body.style.backgroundColor="blue"
+            p1.style.color="white"
+        }     
+        function inputfield(){
+            let a2 = document.getElementById("text_id").value
+            alert(a2)
+        }
+
+        add(10,20) //if the arguments are less than parameters then it display Not a Number(NaN)
+        function add(a=0,b=0){ //default values are used if no arguments are passed
+            console.log(a+b)    
+        }
+
+        // Arrow (=>) function is new feature for declaration of function of JS
+        const add1 = (a,b) =>{
+            console.log(a+b)
+        }
+        add1(40,20)
+       const naming=(name1,name2)=>{
+            console.log(name1+" "+name2) // whitespaces are used to make space between words
+       }
+       naming("Chaitanya","Vinjamuri")
+
+       setTimeout(test,3000)//2nd parameter is known as time interval should be taken to execute a a particular action 
+       function test(){ //1second= 1000
+        document.write("after 3 seconds") //output will load after 3 seconds of duration //when it loaded the output title changes i.e. it displays the file name
+       }
+    // 2nd way i.e. arrow function to use setTimeout()
+    //    setTimeout(() =>
+    //               {
+    //                  document.write("After 3 seconds")
+    //               },3000);
+    </script>
+</body>
+</html>

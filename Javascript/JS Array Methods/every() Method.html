@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Methods | every()</h1>
+    <p>It returns boolean value by checking all the elements of each iteration</p>
+    <p>It returns true when all the elements satisfies the condition otherwise it returns false</p>
+    <script>
+        let marks=[55,22,76,98,83,90]
+        let final_grade=marks.every((arr,i)=>{
+            console.log(arr) // it prints upto 22 and the condition is not satisfied then it displays the boolean value as false because it checks all outputs until the condition is unsatisfied
+            return arr>35;   // once condition is unsatisfied due to single element it always be false then no need to verify the remaining elements
+        })                  //after the unsatisfied element,then remaining elements are satisfied then output is always false
+        console.log(final_grade)
+
+        //named function
+        let marks1=[55,40,76,97,83,90]
+        function func1(arr,i){
+            console.log(arr)
+            return arr>35
+        }
+        let final_grade1=marks1.every(func1)
+        console.log(final_grade1)
+    </script>
+</body>
+</html>

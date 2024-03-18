@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //anonymous function
+        let nums=[7,90,8]
+        let sum=nums.reduce(function(accumulator,element){
+            return accumulator+element
+        },0)
+
+        //first iteration accumulator=0,element=7 => 0+7 = 7        //second iteration accumulator=7,element=90 => 7+90 = 97
+        //first iteration accumulator=97,element=8 => 97+8 = 105
+        
+        console.log(sum)
+
+        //For finding the maximum value
+        let max=nums.reduce(function(accumulator,element,index,array){
+            if(accumulator>element){
+                return accumulator
+            }
+            else{
+                return element
+            }
+        },nums[0])
+        //first iteration accumulator=7,element=7 => 7>7 = 7
+        //second iteration accumulator=7,element=90 => 7>90 = 90
+        //first iteration accumulator=90,element=8 => 90>8 = 90
+        console.log(max)
+
+
+        //named function
+        let nums1=[54,90,108]
+        function func1(accumulator,element){
+            return accumulator+element
+        }
+        let sum1=nums1.reduce(func1,0)
+        console.log(sum1)
+
+        function func2(accumulator,element,index,array){
+            if(accumulator>element){
+                return accumulator
+            }
+            else{
+                return element
+            }
+        }
+        let greater=nums1.reduce(func2,nums1[0]) //accumulator is used for comparision
+        console.log(greater)
+
+    </script>
+    
+</body>
+</html>

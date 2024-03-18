@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>Map() method of Array Methods in ES6 of JS</h1></center>
+    <h2>Map() method creates new array and returns it after iteration</h2>
+    <script>
+
+
+        //syntax of map()
+        //arr.map(function func_name(year,index,arr){ //1st value is element value taken for iteration
+            // code                                  // 2nd value is index of each element while iterating
+        //});                                       //  3rd value is existing array
+        
+        
+        //  3rd value is array which creates all the updated elements in a array format
+        let birthYear=[1998,1999,2003,2005,2009,2012,2017,2021]
+        console.log(birthYear)
+        // anonymous function which doesn't contain any name
+        let ages = birthYear.map(function(element,index,array){
+            return 2024-element; // It returns the value to new array after the calculation
+            
+        })
+        console.table(ages) // it prints in table format
+        
+        
+
+
+        // named function  which contains a function name
+        let college=['aditya','srkr','pragati','jntu']
+        let clgs=college.map(findclg)
+        function findclg(name,index,array){
+            console.log("current college:"+name)
+        }
+
+        //arrow function
+        let branch=['aec','acet','acoe']
+        const nm =(element,index,array) =>{
+            console.log(element)
+        }
+        branch.map(nm)
+    </script>
+    
+</body>
+</html>

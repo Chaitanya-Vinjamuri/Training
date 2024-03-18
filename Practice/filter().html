@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Click the below buttons to See the student details</h1>
+    <button onclick="func1()">AEC</button>
+    <button onclick="func2()">ACET</button>
+    <button onclick="func3()">ACOE</button>
+    <table width="50%" height="200px" border="2px" align="center">
+        <tr>
+            <th>Name</th>
+            <th>Branch</th>
+            <th>PIN</th>
+            <th>College</th>
+        </tr>
+        <tbody id="head"></tbody>
+    </table>
+    <script>
+        let arr=[{
+            name:"Chaitanya",
+            Branch:"CSE",
+            PIN:65,
+            college:"AEC"        
+        },
+        {
+            name:"Akhil",
+            Branch:"AI & ML",
+            PIN:25,
+            college:"AEC"        
+        },
+        {
+            name:"ravi",
+            Branch:"IT",
+            PIN:43,
+            college:"ACET"
+        },
+        {
+            name:"sravya",
+            Branch:"ECE",
+            PIN:27,
+            college:"ACOE"
+        }]
+
+        function func1(){
+        let a=arr.filter((element,index)=>{
+            return element.college=="AEC"
+        })
+        let b='<tbody>'
+        for( i=0;i<a.length;i++){
+            b=b+'<tr>'
+            b=b+'<td>'+a[i].name+'</td>'
+            b=b+'<td>'+a[i].Branch+'</td>'
+            b=b+'<td>'+a[i].PIN+'</td>'
+            b=b+'<td>'+a[i].college+'</td>'
+            b=b+'</tr>'
+            
+        }
+        b=b+='</tbody>'
+        document.getElementById('head').innerHTML=b
+    }
+
+    function func2(){
+        let a=arr.filter((element,index)=>{
+            return element.college=="ACET"
+        })
+        let c='<tbody>'
+        for( i=0;i<a.length;i++){
+            c=c+='<tr>'
+            c=c+='<td>'+a[i].name+'</td>'
+            c=c+='<td>'+a[i].Branch+'</td>'
+            c=c+='<td>'+a[i].PIN+'</td>'
+            c=c+='<td>'+a[i].college+'</td>'
+            c=c+='</tr>'   
+        }
+        c=c+='</tbody>'
+        document.getElementById('head').innerHTML=c
+    }
+    
+    function func3(){
+        let a=arr.filter((element,index)=>{
+            return element.college=="ACOE"
+        })
+        let b='<tbody>'
+        for( i=0;i<a.length;i++){
+            b=b+='<tr>'
+            b=b+='<td>'+a[i].name+'</td>'
+            b=b+='<td>'+a[i].Branch+'</td>'
+            b=b+='<td>'+a[i].PIN+'</td>'
+            b=b+='<td>'+a[i].college+'</td>'
+            b=b+='</tr>'
+            
+        }
+        b=b+='</tbody>'
+        document.getElementById('head').innerHTML=b
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #h12:hover{
+            background-color:blueviolet;
+            color: white;
+        }
+        /* .img1:hover{
+            .img1 .src="Pictures/cake 1.jpg"
+        } */
+    </style>
+</head>
+<body>
+    <h1 id="h12">Cake murder</h1>
+    <img src="Pictures/cake 1.jpg" alt="" width="300px" height="300px" id="img1" onmouseover="func1()" onmouseleave="func2()">
+    <script>
+        let a1=document.getElementById("img1")
+        function func1(){
+                a1.src="Pictures/cake 2.jpg"
+        }
+        function func2(){
+            a1.src="Pictures/cake 1.jpg"
+        }
+    </script>
+</body>
+</html>
